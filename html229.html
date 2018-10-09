@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML</title>
+</head>
+
+<body>
+
+
+
+<h2>&lt;a&gt;</h2>
+<p>&lt;a&gt; 태그는 하이퍼 링크를 정의합니다.</p>
+
+<hr>
+
+<h3>&lt;a&gt;</h3>
+<p class="blue">&lt;a&gt; 태그는 하이퍼 링크를 정의합니다.</p>
+
+<div class="table-responsive">
+    <table class="table table-bordered table-striped table-hover">
+        <colgroup>
+            <col style="width: 30%">
+            <col style="width: 70%">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>특징</th>
+                <th>설명</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th><a href="http://webzz.tistory.com/223">카테고리</a></th>
+                <td>
+                    <a href="http://webzz.tistory.com/223">플로우 콘텐츠(Flow Content)</a>, 
+                    <a href="http://webzz.tistory.com/223">프레이징 콘텐츠(Phrasing content)</a>, 
+                    <a href="http://webzz.tistory.com/223">인터렉티브 콘텐츠 (Interactive content)</a>
+                </td>
+            </tr>
+            <tr>
+                <th><a href="http://webzz.tistory.com/224">속성</a></th>
+                <td><a href="http://webzz.tistory.com/224">글로벌 속성 적용(Global Attributes)</a>, <a href="http://webzz.tistory.com/226">이벤트 속성 적용(Event Attributes)</a></td>
+            </tr>
+            <tr>
+                <th><a href="http://webzz.tistory.com/225">요소</a></th>
+                <td>인라인 구조(Inline Element)</td>
+            </tr>
+            <tr>
+                <th><a href="http://webzz.tistory.com/225">닫는 태그</a></th>
+                <td>적용(&lt;a&gt; ~ &lt;/a&gt;)</td>
+            </tr>
+            <tr>
+                <th>버전</th>
+                <td>HTML4</td>
+            </tr>
+            <tr>
+                <th>시각적 표현</th>
+                <td>밑줄과 파란색으로 표시</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<h4 class="pt30">정의</h4>
+<ul>
+    <li>하이퍼 링크란 현재 페이지에서 다른 페이지의 이동을 말합니다.</li>
+    <li>방문하지 않는 링크는 밑줄과 파란색으로 표시됩니다.</li>
+    <li>방문한 링크는 밑줄과 보라색으로 표시됩니다.</li>
+    <li>활성화된 링크는 밑줄과 빨간색으로 표시됩니다.</li>
+    <li>HTML5에서는 &lt;a&gt; 태그는 블록 요소를 포함할 수 있습니다.</li>
+</ul>
+
+<h4 class="pt30">속성</h4>
+<div class="table-responsive">
+    <table class="table table-bordered table-striped">
+        <colgroup>
+            <col width="">
+            <col width="">
+            <col width="">
+            <col width="7%">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>속성</th>
+                <th>값(예)</th>
+                <th>설명</th>
+                <th class="ce">버전</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>charset</td>
+                <td>charset="UTF-8"</td>
+                <td>문자의 인코딩을 설정합니다.</td>
+                <td class="ce"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-html5x.png" class="icon" alt="html5" title="html5에서 지원하지 않습니다."></td>
+            </tr>
+            <tr>
+                <td>coords</td>
+                <td>coords="90,58,3" </td>
+                <td>코드의 좌표를 설정합니다.</td>
+                <td class="ce"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-html5x.png" class="icon" alt="html5" title="html5에서 지원하지 않습니다."></td>
+            </tr>
+            <tr>
+                <td>download</td>
+                <td>download="filename"</td>
+                <td>파일 다운로드를 설정합니다.</td>
+                <td class="ce"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/icon-html5.png" class="icon" alt="html5" title="html5 기능입니다."></td>
+            </tr>
+            <tr>
+                <td>href</td>
+                <td>href="URL"</td>
+                <td>링크로 이동하는 경로를 설정합니다.</td>
+                <td class="ce">-</td>
+            </tr>
+            <tr>
+                <td>hreflang</td>
+                <td>hreflang="ko"</td>
+                <td>링크된 문서의 언어를 설정합니다.</td>
+                <td class="ce">-</td>
+            </tr>
+            <tr>
+                <td>media</td>
+                <td>media="value"</td>
+                <td>링크된 문서의 미디어쿼리를 설정합니다.</td>
+                <td class="ce"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/icon-html5.png" class="icon" alt="html5" title="html5 기능입니다."></td>
+            </tr>
+            <tr>
+                <td>name</td>
+                <td>name="text"</td>
+                <td>링크된 앵커의 이름을 설정합니다.</td>
+                <td class="ce"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-html5x.png" class="icon" alt="html5" title="html5에서 지원하지 않습니다."></td>
+            </tr>
+            <tr>
+                <td>rel</td>
+                <td>
+                    alternate<br /> author
+                    <br /> bookmark
+                    <br /> external
+                    <br /> help
+                    <br /> license
+                    <br /> next
+                    <br /> nofollow
+                    <br /> noreferrer
+                    <br /> noopener
+                    <br /> prev
+                    <br /> search
+                    <br /> tag
+                </td>
+                <td>
+                    문서에 대한 대체 링크를 설정합니다.<br /> 문서에 대한 저자 링크를 설정합니다.<br /> 문서에 대한 북마크 URL을 설정합니다.<br /> 문서에 대한 도움과 관련된 링크를 설정합니다.<br /> 문서에 대한 저작권과 관련된 링크를 설정합니다.<br /> 문서에 대한 다음 문서 링크를 제공합니다.<br /> 문서에 대한 링크를 사용하지 않을 때 설정합니다.<br /> 문서에 대한 HTTP 레퍼럴을 사용하지 않을 때 설정합니다. <br /> 문서에 대한 캐시를 설정합니다.<br /> 문서에 대한 이전 문서를 설정합니다.<br /> 문서에 대한 검색 도구를 설정합니다.<br /> 문서에 대한 키워드를 설정합니다. <br /> 문서에 대한 태그를 설정합니다.
+                </td>
+                <td class="ce mi">-</td>
+            </tr>
+            <tr>
+                <td>rev</td>
+                <td>text</td>
+                <td>링크된 문서와 현재 문서의 관계를 설정합니다.</td>
+                <td class="ce"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-html5x.png" class="icon" alt="html5" title="html5에서 지원하지 않습니다."></td>
+            </tr>
+            <tr>
+                <td>shape</td>
+                <td>
+                    default<br /> rect
+                    <br /> circle
+                    <br /> poly
+                </td>
+                <td>
+                    링크의 형태를 기본 값으로 설정합니다.<br /> 링크의 형태를 사각형 설정합니다.<br /> 링크의 형태를 원형 설정합니다.<br /> 링크의 형태를 다각형 설정합니다.
+                </td>
+                <td class="ce mi"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-html5x.png" class="icon" alt="html5" title="html5에서 지원하지 않습니다."></td>
+            </tr>
+            <tr>
+                <td>target</td>
+                <td>
+                    _blank<br /> _parent
+                    <br /> _self
+                    <br /> _top
+                </td>
+                <td>
+                    링크 클릭시 새로운 브라우저 창으로 설정합니다.<br /> 현재 브라우저의 부모 브라우저 창으로 설정합니다. 부모가 없는 경우 _self와 동일합니다.<br /> 현재와 동일한 브라우저 창으로 설정합니다.<br /> 최상위 브라우저 창에서 설정합니다. 부모가 없는 경우 _self와 동일합니다.
+                </td>
+                <td class="ce mi">-</td>
+            </tr>
+            <tr>
+                <td>type</td>
+                <td>type="text/html"</td>
+                <td>링크된 문서의 유형을 설정합니다.</td>
+                <td class="ce">-</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+</body>
+
+</html>
