@@ -1,17 +1,7 @@
-<!DOCTYPE html>
-<html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <title>HTML</title>
-</head>
-
-<body>
-
 
 
 <h2>&lt;section&gt;</h2>
-<p>&lt;section&gt; 태그는 주제별 그룹의 콘텐츠 섹션을 정의합니다.</p>
+<p>&lt;section&gt; 태그는 주제별 그룹의 콘텐츠 섹션을 나타낼 때 사용하며, 각 섹션에는 &lt;h1&gt;~&lt;h6&gt; 요소를 자식으로 포함시켜 식별해야 합니다. &lt;section&gt; 태그는 스타일링 요소가 아니기 때문에 그룹화나 편의를 위함이라면 &lt;div&gt; 태그를 사용하는 것이 좋습니다. </p>
 
 <hr>
 
@@ -35,8 +25,8 @@
                 <th><a href="http://webzz.tistory.com/223">카테고리</a></th>
                 <td>
                     <a href="http://webzz.tistory.com/223">플로우 콘텐츠(Flow Content)</a>, 
-                    <a href="http://webzz.tistory.com/223">프레이징 콘텐츠(Phrasing Content)</a>,
-                    <a href="http://webzz.tistory.com/223">메타데이터 콘텐츠(Metadata Content)</a>
+                    <a href="http://webzz.tistory.com/223">섹션닝 콘텐츠(Sectioning Content)</a>,
+                    <a href="http://webzz.tistory.com/223">팰퍼블 콘텐츠(Palpable Content)</a>
                 </td>
             </tr>
             <tr>
@@ -48,15 +38,15 @@
             </tr>
             <tr>
                 <th><a href="http://webzz.tistory.com/225">요소</a></th>
-                <td><a href="http://webzz.tistory.com/225">인라인 요소(Inline Element)</a></td>
+                <td><a href="http://webzz.tistory.com/225">블록 요소(Block Element)</a></td>
             </tr>
             <tr>
                 <th><a href="http://webzz.tistory.com/225">닫는 태그</a></th>
-                <td>닫는 태그 사용(&lt;section&gt; ~ &lt;/section&gt;)</td>
+                <td><a href="http://webzz.tistory.com/225">닫는 태그 사용(&lt;section&gt; ~ &lt;/section&gt;)</a></td>
             </tr>
             <tr>
                 <th><a href="http://webzz.tistory.com/228">버전</a></th>
-                <td>HTML4</td>
+                <td><a href="http://webzz.tistory.com/228">HTML5</a></td>
             </tr>
             <tr>
                 <th>시각적 표현</th>
@@ -70,7 +60,7 @@
 <h4 class="pt50">정의(Definition)</h4>
 <ul>
     <li>&lt;section&gt; 태그는 주제별 그룹의 콘텐츠 섹션을 정의합니다.</li>
-    <li>&lt;section&gt; 태그는 탭 페이지, 홈페이지의 소개, 연락처, 뉴스항목 등과 같이 주제별로 분할 할 수 있습니다.</li>
+    <li>&lt;section&gt; 태그는 탭 페이지, 홈페이지의 소개, 연락처, 뉴스항목 등과 같이 주제별로 분류 할 수 있습니다.</li>
     <li>&lt;section&gt; 태그에는 제목을 나타내는 &lt;h1&gt; ~ &lt;h6&gt; 태그가 포함되어야 합니다.</li>
     <li>&lt;section&gt; 태그는 문장이나 문서의 스타일링 요소가 아닙니다. 스크립트의 편의나 영역을 위함이라면 div가 좋습니다.</li>
     <li>&lt;section&gt; 태그가 일반적인 영역의 주제가 아니라면 구체적인 요소(&lt;article&gt;, &lt;aside&gt;, &lt;nav&gt;)를 대신 사용하는 것이 더 적절합니다.</li>
@@ -82,7 +72,10 @@
 
 
 
-<h4 class="pt50">호환성(Compatibility) <a href="http://webzz.tistory.com/227" class="link"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/link.png"><span class="ir_pm">더보기</span></a></h4>
+<h4 class="pt50">호환성(Compatibility) 
+    <a href="http://webzz.tistory.com/227" class="link"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/link.png"><span class="ir_pm">더보기</span></a>
+    <span class="can">caniuse.com <a href="https://caniuse.com/#search=select" target="_blank"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></span>
+</h4>
 <div class="table-responsive">
     <table class="table table-bordered table-striped table-hover compatibility">
         <thead>
@@ -106,7 +99,7 @@
         </thead>
         <tbody>
             <tr>
-                <td scope="row">&lt;section&gt;</td>
+                <td class="ce" scope="row">&lt;section&gt;</td>
                 <td><span title="사용가능합니다.">사용가능</span></td><!-- 크롬 -->
                 <td><span title="사용가능합니다.">사용가능</span></td><!-- 파이어폭스 -->
                 <td><span title="사용가능합니다.">사용가능</span></td><!-- 사파리 -->
@@ -127,8 +120,11 @@
 </div>
 
 
+<h4 class="pt40">참고(Reference)</h4>
+<ul>
+    <li>MDN <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section" target="_blank"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></li>
+    <li>HTML5.1 <a href="https://www.w3.org/TR/html51/sections.html#the-section-element" target="_blank"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></li>
+</ul>
 
 
 
-</body>
-</html>

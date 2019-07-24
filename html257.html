@@ -1,22 +1,13 @@
-<!DOCTYPE html>
-<html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <title>HTML</title>
-</head>
-
-<body>
 
 
 
-<h2>&lt;datalist&gt;</h2>
-    <p>&lt;datalist&gt; 태그는 <a href="http://webzz.tistory.com/286">&lt;input&gt;</a> 요소의 미리 정의된 옵션의 리스트를 정의합니다.</p>
+<h2>&lt;details&gt;</h2>
+<p>&lt;details&gt; 태그는 접기/펼치기 목록을 설정합니다. 자바스크립트를 이용하여 컨텐츠 내용을 숨기고 보여줄 수 있는 기능을 HTML 태그를 통해 구현할 수 있습니다. 접기/펼치기 목록의 제목은 &lt;summary&gt; 태그를 통해 설정합니다.</p>
 
 <hr>
 
-<h3>&lt;datalist&gt;</h3>
-    <p class="blue">&lt;datalist&gt; 태그는 <a href="http://webzz.tistory.com/286">&lt;input&gt;</a> 요소의 미리 정의된 옵션의 리스트를 정의합니다.</p>
+<h3>&lt;details&gt;</h3>
+    <p class="blue">&lt;details&gt; 태그는 접기/펼치기 목록을 정의합니다.</p>
 
 <div class="table-responsive">
     <table class="table table-bordered table-striped table-hover">
@@ -51,15 +42,15 @@
             </tr>
             <tr>
                 <th><a href="http://webzz.tistory.com/225">닫는 태그</a></th>
-                <td>닫는 태그 사용(&lt;datalist&gt; ~ &lt;/datalist&gt;)</td>
+                <td><a href="http://webzz.tistory.com/225">닫는 태그 사용(&lt;details&gt; ~ &lt;/details&gt;)</a></td>
             </tr>
             <tr>
                 <th><a href="http://webzz.tistory.com/228">버전</a></th>
-                <td>HTML5</td>
+                <td><a href="http://webzz.tistory.com/228">HTML5</a></td>
             </tr>
             <tr>
                 <th>시각적 표현</th>
-                <td>선택 메뉴 표현</td>
+                <td>접기/펼치기 삼각형 아이콘</td>
             </tr>
         </tbody>
     </table>
@@ -68,14 +59,204 @@
 
 <h4 class="pt50">정의(Definition)</h4>
 <ul>
-    <li>&lt;datalist&gt; 태그는 <a href="http://webzz.tistory.com/286">&lt;input&gt;</a> 요소의 미리 정의된 옵션의 리스트를 정의합니다.</li>
-    <li>&lt;datalist&gt; 태그는 <a href="http://webzz.tistory.com/308">&lt;option&gt;</a> 요소와 함께 사용합니다.</li>
+    <li>&lt;details&gt; 태그는 접기/펼치기 목록을 정의합니다.</li>
+    <li>&lt;details&gt; 요소의 제목은 &lt;summary&gt; 태그를 사용합니다.</li>
+    <li>::-webkit-details-marker 속성을 사용하면 마커 모양을 수정할 수 있습니다.</li>
 </ul>
 
+<h4 class="pt50">비교(Compare)</h4>
+<ul>
+    <li>접기/펼치기 목록을 사용시 &lt;details&gt; 태그를 사용합니다.</li>
+    <li>접기/펼치기 목록의 제목은 &lt;summary&gt; 태그를 사용합니다.</li>
+</ul>
+
+<h4 class="pt50">속성(Property)</h4>
+<div class="table-responsive">
+    <table class="table table-bordered table-striped table-hover">
+        <colgroup>
+            <col width="">
+            <col width="">
+            <col width="">
+            <col width="7%">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>속성</th>
+                <th>값(예)</th>
+                <th>설명</th>
+                <th class="ce">버전</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>open</td>
+                <td>
+                    open
+                </td>
+                <td>
+                    숨겨진 정보를 보여줍니다.
+                </td>
+                <td class="ce"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-html5x.png" class="icon" alt="html5" title="html5에서 지원하지 않습니다."></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<!-- Sample1 -->
+<h4 class="pt50">Sample1</h4>
+<p>&lt;details&gt; 태그와  &lt;summary&gt; 태그의 사용 예제입니다.</p>
+<div class="sample">
+    <h5>결과<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="ex">
+        <!-- ex -->
+        <div class="none">
+            <details>
+                <summary>더 자세한 정보를 알고 싶다면?</summary>
+                <ol>
+                   <li>접기/펼치기 목록은 deatails 요소를 사용합니다.</li>
+                   <li>접기/펼치기 목록의 제목은 summary 요소를 사용합니다.</li> 
+                </ol>
+            </details>
+        </div>
+        <!-- ex -->
+    </div>
+</div>
+<div class="sample">
+    <h5>html<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="html">
+<pre class="line-numbers"><code class="language-markup">&lt;details&gt;
+    &lt;summary&gt;더 자세한 정보를 알고 싶다면?&lt;/summary&gt;
+    &lt;ol&gt;
+       &lt;li&gt;접기/펼치기 목록은 deatails 요소를 사용합니다.&lt;/li&gt;
+       &lt;li&gt;접기/펼치기 목록의 제목은 summary 요소를 사용합니다.&lt;/li&gt; 
+    &lt;/ol&gt;
+&lt;/details&gt;
+</code></pre>
+    </div>
+</div>
+<!-- sample1 -->
+
+
+<!-- Sample2 -->
+<h4 class="pt50">Sample2</h4>
+<p>&lt;details&gt; 태그에 open 속성으로 숨겨진 내요을 펼쳐 볼 수 있는 예제입니다.</p>
+<div class="sample">
+    <h5>결과<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="ex">
+        <!-- ex -->
+        <div class="none">
+            <details open>
+                <summary>더 자세한 정보를 알고 싶다면?</summary>
+                <ol>
+                   <li>접기/펼치기 목록은 deatails 요소를 사용합니다.</li>
+                   <li>접기/펼치기 목록의 제목은 summary 요소를 사용합니다.</li> 
+                </ol>
+            </details>
+        </div>
+        <!-- ex -->
+    </div>
+</div>
+<div class="sample">
+    <h5>html<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="html">
+<pre class="line-numbers"><code class="language-markup">&lt;details open&gt;
+    &lt;summary&gt;더 자세한 정보를 알고 싶다면?&lt;/summary&gt;
+    &lt;ol&gt;
+       &lt;li&gt;접기/펼치기 목록은 deatails 요소를 사용합니다.&lt;/li&gt;
+       &lt;li&gt;접기/펼치기 목록의 제목은 summary 요소를 사용합니다.&lt;/li&gt; 
+    &lt;/ol&gt;
+&lt;/details&gt;
+</code></pre>
+    </div>
+</div>
+<!-- sample2 -->
+
+
+<!-- Sample3 -->
+<h4 class="pt50">Sample3</h4>
+<p>&lt;summary&gt; 태그에 제목 태그나 강조 태그를 넣을 수 있는 예제입니다.</p>
+<div class="sample">
+    <h5>결과<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="ex">
+        <!-- ex -->
+        <div class="none">
+            <details open>
+                <summary><strong>더 자세한 정보를 알고 싶다면?</strong></summary>
+                <ol>
+                   <li>접기/펼치기 목록은 deatails 요소를 사용합니다.</li>
+                   <li>접기/펼치기 목록의 제목은 summary 요소를 사용합니다.</li> 
+                </ol>
+            </details>
+        </div>
+        <!-- ex -->
+    </div>
+</div>
+<div class="sample">
+    <h5>html<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="html">
+<pre class="line-numbers"><code class="language-markup">&lt;details open&gt;
+    &lt;summary&gt;&lt;strong&gt;더 자세한 정보를 알고 싶다면?&lt;/strong&gt;&lt;/summary&gt;
+    &lt;ol&gt;
+       &lt;li&gt;접기/펼치기 목록은 deatails 요소를 사용합니다.&lt;/li&gt;
+       &lt;li&gt;접기/펼치기 목록의 제목은 summary 요소를 사용합니다.&lt;/li&gt; 
+    &lt;/ol&gt;
+&lt;/details&gt;
+</code></pre>
+    </div>
+</div>
+<!-- sample3 -->
+
+
+<style>
+    .none.n2 details {width: 500px;}
+    .none.n2 details > summary {background: #f1f1f1; padding: 3px 10px;}
+    .none.n2 details > summary::-webkit-details-marker {display: none}
+</style>
+<!-- Sample4 -->
+<h4 class="pt50">Sample4</h4>
+<p>&lt;details&gt; 태그에 CSS를 통해 디자인 수정이 가능합니다.</p>
+<div class="sample">
+    <h5>결과<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="ex">
+        <!-- ex -->
+        <div class="none n2">
+            <details>
+                <summary>더 자세한 정보를 알고 싶다면?</summary>
+                <p>&lt;details&gt; 태그는 접기/펼치기 목록을 설정합니다. 자바스크립트를 이용하여 컨텐츠 내용을 숨기고 보여줄 수 있는 기능을 HTML 태그를 통해 구현할 수 있습니다. 접기/펼치기 목록의 제목은 &lt;summary&gt; 태그를 통해 설정합니다.</p>
+            </details>
+        </div>
+        <!-- ex -->
+    </div>
+</div>
+<div class="sample">
+    <h5>HTML<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="html">
+<pre class="line-numbers"><code class="language-markup">&lt;details&gt;
+    &lt;summary&gt;더 자세한 정보를 알고 싶다면?&lt;/summary&gt;
+    &lt;p&gt; details 태그는 접기/펼치기 목록을 설정합니다. 자바스크립트를 이용하여 컨텐츠 내용을 숨기고 보여줄 수 있는 기능을 HTML 태그를 통해 구현할 수 있습니다. 접기/펼치기 목록의 제목은 summary 태그를 통해 설정합니다.&lt;/p&gt;
+&lt;/details&gt;
+</code></pre>
+    </div>
+</div>
+<div class="sample">
+    <h5>CSS<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="html">
+<pre class="line-numbers"><code class="language-css">details {width: 500px;}
+details > summary {background: #f1f1f1; padding: 3px 10px;}
+details > summary::-webkit-details-marker {display: none}
+</code></pre>
+    </div>
+</div>
+<!-- sample4 -->
 
 
 
-<h4 class="pt50">호환성(Compatibility) <a href="http://webzz.tistory.com/227" class="link"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/link.png"><span class="ir_pm">더보기</span></a></h4>
+
+<h4 class="pt50">호환성(Compatibility) 
+    <a href="http://webzz.tistory.com/227" class="link"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/link.png"><span class="ir_pm">더보기</span></a>
+    <span class="can">caniuse.com <a href="https://caniuse.com/#search=details" target="_blank"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></span> 
+</h4>
 <div class="table-responsive">
     <table class="table table-bordered table-striped table-hover compatibility">
         <thead>
@@ -99,21 +280,20 @@
         </thead>
         <tbody>
             <tr>
-                <td scope="row" class="ce">&lt;datalist&gt;</td>
+                <td scope="row" class="ce">&lt;details&gt;</td>
                 <td><span title="사용가능합니다.">사용가능</span></td><!-- 크롬 -->
                 <td><span title="사용가능합니다.">사용가능</span></td><!-- 파이어폭스 -->
-                <td class="no"><span title="사용 할 수 없습니다.">사용안됨</span></td><!-- 사파리 -->
+                <td><span title="사용가능합니다.">사용가능</span></td><!-- 사파리 -->
                 <td><span title="사용가능합니다.">사용가능</span></td><!-- 오페라 -->
                 <td><span title="사용가능합니다.">사용가능</span></td><!-- 네이버 -->
                 <td class="no"><span title="사용 할 수 없습니다.">사용안됨</span></td><!-- 익스플로러6 -->
                 <td class="no"><span title="사용 할 수 없습니다.">사용안됨</span></td><!-- 익스플로러7 -->
                 <td class="no"><span title="사용 할 수 없습니다.">사용안됨</span></td><!-- 익스플로러8 -->
                 <td class="no"><span title="사용 할 수 없습니다.">사용안됨</span></td><!-- 익스플로러9 -->
-                <td><span title="사용가능합니다.">사용가능</span></td><!-- 익스플로러10 -->
-                <td><span title="사용가능합니다.">사용가능</span></td><!-- 익스플로러11 -->
+                <td class="no"><span title="사용 할 수 없습니다.">사용안됨</span></td><!-- 익스플로러10 -->
+                <td class="no"><span title="사용 할 수 없습니다.">사용안됨</span></td><!-- 익스플로러11 -->
                 <td><span title="사용가능합니다.">사용가능</span></td><!-- 엣지 -->
-                <td class="no"><span title="사용 할 수 없습니다.">사용안됨</span></td><!-- 안드로이드 -->
-                <td class="no"><span title="사용 할 수 없습니다.">사용안됨</span></td><!-- 안드로이드 -->
+                <td><span title="사용가능합니다.">사용가능</span></td><!-- 안드로이드 -->
                 <td><span title="사용가능합니다.">사용가능</span></td><!-- IOS -->
             </tr>
         </tbody>
@@ -124,6 +304,9 @@
 
 
 
-</body>
+<h4 class="pt40">참고(Reference)</h4>
+<ul>
+    <li>MDN <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details" target="_blank"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></li>
+    <li>HTML5 <a href="https://www.w3.org/TR/html51/interactive-elements.html#the-summary-element" target="_blank"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></li>
+</ul>
 
-</html>

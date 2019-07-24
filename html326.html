@@ -1,17 +1,11 @@
-<!DOCTYPE html>
-<html lang="ko">
 
-<head>
-    <meta charset="UTF-8">
-    <title>HTML</title>
-</head>
-
-<body>
 
 
 
 <h2>&lt;source&gt;</h2>
-<p>&lt;source&gt; 태그는 미디어 요소에 대한 소스를 지정하는데 사용합니다.</p>
+<p>&lt;source&gt; 태그는 &lt;picture&gt;, &lt;audio&gt; 요소 및 &lt;video&gt; 요소에 소스를 지정하는데 사용합니다. 닫는 태그가 없는 빈요소입니다.</p>
+
+
 
 <hr>
 
@@ -33,7 +27,7 @@
         <tbody>
             <tr>
                 <th><a href="http://webzz.tistory.com/223">카테고리</a></th>
-                <td>-</td>
+                <td><a href="http://webzz.tistory.com/223">해당없음(None)</a></td>
             </tr>
             <tr>
                 <th><a href="http://webzz.tistory.com/224">속성</a></th>
@@ -48,11 +42,11 @@
             </tr>
             <tr>
                 <th><a href="http://webzz.tistory.com/225">닫는 태그</a></th>
-                <td>닫는 태그 사용(&lt;source&gt; ~ &lt;/source&gt;)</td>
+                <td><a href="http://webzz.tistory.com/225">닫는 태그 사용 안함</a></td>
             </tr>
             <tr>
                 <th><a href="http://webzz.tistory.com/228">버전</a></th>
-                <td>HTML5</td>
+                <td><a href="http://webzz.tistory.com/228">HTML5</a></td>
             </tr>
             <tr>
                 <th>시각적 표현</th>
@@ -110,7 +104,7 @@
             <tr>
                 <td>srcset</td>
                 <td>srcset = "URL을"</td>
-                <td>&lt;picture&gt;를 사용할 때 이미지 URL을 설정합니다.</td>
+                <td>화면 크기 및 해상도에 따라 이미지를 설정합니다. &lt;picture&gt; 요소에서만 사용</td>
                 <td class="ce">-</td>
             </tr>
             <tr>
@@ -125,7 +119,40 @@
 
 
 
-<h4 class="pt50">호환성(Compatibility) <a href="http://webzz.tistory.com/227" class="link"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/link.png"><span class="ir_pm">더보기</span></a></h4>
+<!-- Sample1 -->
+<h4 class="pt50">Sample1</h4>
+<div class="sample">
+    <h5>결과<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="ex">
+        <!-- ex -->
+        <div class="none">
+            <video width="100%" controls poster="https://tistory1.daumcdn.net/tistory/2933724/skin/images/blend02.jpg">
+                <source src="tutor.mp4" type="video/mp4">
+                <source src="tutor.ogv" type="video/ogv">
+            </video>
+        </div>
+        <!-- ex -->
+    </div>
+</div>
+<div class="sample">
+    <h5>html<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="html">
+<pre class="line-numbers"><code class="language-markup">&lt;video width="620" controls poster="이미지 경로"&gt;
+    &lt;source src="비디오.mp4" type="video/mp4"&gt;
+    &lt;source src="비디오 경로.ogv" type="video/ogg"&gt;
+    &lt;source src="비디오 경로.avi" type="video/avi"&gt;
+    당신의 브라우저는 동영상을 지원하지 않습니다.
+&lt;/video&gt;
+</code></pre>
+    </div>
+</div>
+<!-- sample1 -->
+
+
+<h4 class="pt50">호환성(Compatibility) 
+    <a href="http://webzz.tistory.com/227" class="link"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/link.png"><span class="ir_pm">더보기</span></a>
+    <span class="can">caniuse.com <a href="https://caniuse.com/#search=strike" target="_blank"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></span>
+</h4>
 <div class="table-responsive">
     <table class="table table-bordered table-striped table-hover compatibility">
         <thead>
@@ -256,7 +283,9 @@
 
 
 
+<h4 class="pt40">참고(Reference)</h4>
+<ul>
+    <li>MDN <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/source" target="_blank"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></li>
+    <li>HTML5 <a href="https://www.w3.org/TR/html50/text-level-semantics.html#the-span-element" target="_blank"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></li>
+</ul>
 
-
-</body>
-</html>

@@ -1,17 +1,10 @@
-<!DOCTYPE html>
-<html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <title>HTML</title>
-</head>
-
-<body>
-
 
 
 <h2>&lt;wbr&gt;</h2>
 <p>&lt;wbr&gt; 태그는 줄바꿈 할 위치를 정의할 때 사용합니다.</p>
+<p>&lt;wbr&gt; 태그의 사용은 제한적입니다. 일반적인 한글이나 영어에서는 해당이 되지 않습니다. 
+  의미가 없는 단어나 해석 할 수 없는 단어의 줄바꿈을 할 때 사용합니다. 예를 들면 의미적 전달이 안되는 브라우저의 주소가 
+  가장 적절한 예가 될 것입니다. 단어의 줄바꿈이나 글자의 줄바꿈을 컨트롤 하고 싶다면 word-break 속성을 사용합니다.</p>
 
 <hr>
 
@@ -33,30 +26,33 @@
         <tbody>
             <tr>
                 <th><a href="http://webzz.tistory.com/223">카테고리</a></th>
-                <td><a href="http://webzz.tistory.com/223">플로우 콘텐츠(Flow Content)</a></td>
+                <td>
+                    <a href="https://webzz.tistory.com/223" target="_blank">플로우 콘텐츠(Flow Content),</a> 
+                    <a href="https://webzz.tistory.com/223" target="_blank">프레이징 콘텐츠 (Phrasing content)</a>
+                </td>
             </tr>
             <tr>
                 <th><a href="http://webzz.tistory.com/224">속성</a></th>
                 <td>
-                    <a href="http://webzz.tistory.com/224">글로벌 속성 적용(Global Attributes)</a>, 
-                    <a href="http://webzz.tistory.com/226">이벤트 속성 적용(Event Attributes)</a>
+                    <a href="http://webzz.tistory.com/224" target="_blank">글로벌 속성 적용(Global Attributes)</a>, 
+                    <a href="http://webzz.tistory.com/226" target="_blank">이벤트 속성 적용(Event Attributes)</a>
                 </td>
             </tr>
             <tr>
                 <th><a href="http://webzz.tistory.com/225">요소</a></th>
-                <td><a href="http://webzz.tistory.com/225">인라인 요소(Inline Element)</a></td>
+                <td><a href="http://webzz.tistory.com/225" target="_blank">인라인 요소(Inline Element)</a></td>
             </tr>
             <tr>
                 <th><a href="http://webzz.tistory.com/225">닫는 태그</a></th>
-                <td>닫는 태그 사용(&lt;wbr&gt; ~ &lt;/wbr&gt;)</td>
+                <td><a href="http://webzz.tistory.com/225" target="_blank">닫는 태그 사용 안함</a></td>
             </tr>
             <tr>
                 <th><a href="http://webzz.tistory.com/228">버전</a></th>
-                <td>HTML5</td>
+                <td><a href="http://webzz.tistory.com/228" target="_blank">HTML5</a></td>
             </tr>
             <tr>
                 <th>시각적 표현</th>
-                <td>-</td>
+                <td>줄바꿈</td>
             </tr>
         </tbody>
     </table>
@@ -65,8 +61,10 @@
 
 <h4 class="pt50">정의(Definition)</h4>
 <ul>
+    <li>&lt;wbr&gt; 태그는 일반적인 한글이나 영어에 해당되지 않는 글자에서 사용합니다.</li>
     <li>&lt;wbr&gt; 태그는 줄바꿈 할 위치를 정의할 때 사용합니다.</li>
-    <li>&lt;wbr&gt; 태그는 단어가 너무 길거나 원하지 않는 곳에서 줄바꿈을 일어날 것을 염려한다면 이 태그를 사용합니다.</li>
+    <li>&lt;wbr&gt; 태그는 단어가 너무 길거나 원하는 곳에서 줄바꿈을 하고 싶을 때 사용합니다.</li>
+    <li>일반적인 한글이나 영어에 줄바꿈을 원하면 CSS 속성 <a href="http://webzz.tistory.com/247" target="_blank">word-break</a>를 사용합니다.</li>
 </ul>
 
 
@@ -75,12 +73,79 @@
 <ul>
     <li>텍스트 줄바꿈을 원하다면 <a href="http://webzz.tistory.com/247">&lt;br&gt;</a> 태그를 사용합니다.</li>
     <li>텍스트 줄바꿈 할 지점을 원하다면 <a href="http://webzz.tistory.com/352">&lt;wbr&gt;</a> 태그를 사용합니다.</li>
+    <li>일반적인 텍스트의 줄바꿈을 원하다면 CSS 속성 <a href="http://webzz.tistory.com/247" target="_blank">word-break</a> 속성을 사용합니다.</li>
 </ul>
 
 
+<!-- Sample1 -->
+<h4 class="pt50">샘플(Sample)</h4>
+<p>줄바꿈 할 지점을 정의합니다.</p>
+<div class="sample">
+    <h5>Sample1<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="ex">
+        <!-- ex -->
+        <div id="resizable">
+            <h3>일반적인 문장</h3>
+            <p>이 문장은 일반적인 문장입니다. 일반적인 문장은 화면크기에 따라서 자동으로 줄바꿈이 됩니다. 이 태그의
+            사용은 제한적입니다. 일반적인 한글이나 영어에서는 해당이 되지 않습니다. 의미가 없는 단어나 해석 할 수 없는 단어의 줄바꿈을
+            설정합니다. 의미적 전달이 안되는 브라우저의 주소가 가장 적절한 예가 될 것입니다.</p>
+            <p>webzz.tistory.com/352/tistory/webstoryboy/webs/site/coding/this.com/site/smaple/web.co.kr</p>
 
+            <h3>&lt;wbr&gt;태그를 사용한 경우</h3>
+            <p>이 문장은 일반적인 문장입니다. 일반적인 문장은 화면크기에 따라서 자동으로<wbr> 줄바꿈이 됩니다. 이 태그의
+            사용은 제한적입니다. 일반적인 한글이나 영어에서는<wbr> 해당이 되지 않습니다.<wbr> 의미가 없는 단어나<wbr> 해석 할 수 없는 단어의<wbr> 줄바꿈을
+            설정합니다. 의미적 전달이 안되는 브라우저의 주소가 가장 적절한 예가 될 것입니다.</p>
+            <p>webzz.tistory.com<wbr>/352<wbr>/tistory<wbr>/webstoryboy<wbr>/webs<wbr>/site<wbr>/coding<wbr>/this.com<wbr>/site<wbr>/smaple<wbr>/web.co.kr</p>
 
-<h4 class="pt50">호환성(Compatibility) <a href="http://webzz.tistory.com/227" class="link"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/link.png"><span class="ir_pm">더보기</span></a></h4>
+            <h3>&lt;br&gt;태그를 사용한 경우</h3>
+            <p>이 문장은 일반적인 문장입니다. 일반적인 문장은 화면크기에 따라서 자동으로 줄바꿈이 됩니다.<br> 이 태그의
+            사용은 제한적입니다. 일반적인 한글이나 영어에서는 해당이 되지 않습니다.<br> 의미가 없는 단어나 해석 할 수 없는 단어의 줄바꿈을
+            설정합니다. 의미적 전달이 안되는 브라우저의 주소가 가장 적절한 예가 될 것입니다.</p>
+            <p>webzz.tistory.com/352/tistory/webstoryboy/webs/site/coding/this.com<br>/site/smaple/web.co.kr</p>
+        </div>
+        <!-- ex -->
+    </div>
+    
+    <div class="choice1">
+        <a href="#" class="off1">검은색 점을 선택하고 화면의 크기를 조절합니다.</a>
+    </div>
+</div>
+<!-- sample -->
+
+<div class="sample">
+    <h5>html<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="html">
+        <pre class="line-numbers"><code class="language-markup">&lt;h3&gt;일반적인 문장&lt;/h3&gt;
+&lt;p&gt;
+    이 문장은 일반적인 문장입니다. 일반적인 문장은 화면크기에 따라서 자동으로 줄바꿈이 됩니다. 이 태그의 사용은 제한적입니다. 
+    일반적인 한글이나 영어에서는 해당이 되지 않습니다. 의미가 없는 단어나 해석 할 수 없는 단어의 줄바꿈을 설정합니다. 
+    의미적 전달이 안되는 브라우저의 주소가 가장 적절한 예가 될 것입니다.
+&lt;/p&gt;
+&lt;p&gt;webzz.tistory.com/352/tistory/webstoryboy/webs/site/coding/this.com/site/smaple/web.co.kr&lt;/p&gt;
+
+&lt;h3&gt;&lt;wbr&gt;태그를 사용한 경우&lt;/h3&gt;
+&lt;p&gt;
+    이 문장은 일반적인 문장입니다. 일반적인 문장은 화면크기에 따라서 자동으로&lt;wbr&gt; 줄바꿈이 됩니다. 이 태그의 사용은 제한적입니다. 
+    일반적인 한글이나 영어에서는&lt;wbr&gt; 해당이 되지 않습니다.&lt;wbr&gt; 의미가 없는 단어나&lt;wbr&gt; 해석 할 수 없는 단어의&lt;wbr&gt; 줄바꿈을 설정합니다. 
+    의미적 전달이 안되는 브라우저의 주소가 가장 적절한 예가 될 것입니다.
+&lt;/p&gt;
+&lt;p&gt;webzz.tistory.com&lt;wbr&gt;/352&lt;wbr&gt;/tistory&lt;wbr&gt;/webstoryboy&lt;wbr&gt;/webs&lt;wbr&gt;/site&lt;wbr&gt;/coding&lt;wbr&gt;/this.com&lt;wbr&gt;/site&lt;wbr&gt;/smaple&lt;wbr&gt;/web.co.kr&lt;/p&gt;
+
+&lt;h3&gt;&lt;br&gt;태그를 사용한 경우&lt;/h3&gt;
+&lt;p&gt;
+    이 문장은 일반적인 문장입니다. 일반적인 문장은 화면크기에 따라서 자동으로 줄바꿈이 됩니다.&lt;br&gt; 이 태그의 사용은 제한적입니다. 
+    일반적인 한글이나 영어에서는 해당이 되지 않습니다.&lt;br&gt; 의미가 없는 단어나 해석 할 수 없는 단어의 줄바꿈을 설정합니다. 
+    의미적 전달이 안되는 브라우저의 주소가 가장 적절한 예가 될 것입니다.
+&lt;/p&gt;
+&lt;p&gt;webzz.tistory.com/352/tistory/webstoryboy/webs/site/coding/this.com&lt;br&gt;/site/smaple/web.co.kr&lt;/p&gt;</code></pre>
+    </div>
+</div>
+<!-- sample -->
+
+<h4 class="pt50">호환성(Compatibility) 
+    <a href="http://webzz.tistory.com/227" class="link"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/link.png"><span class="ir_pm">더보기</span></a>
+    <span class="can">caniuse.com <a href="https://caniuse.com/#feat=wbr-element" target="_blank"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></span>
+</h4>
 <div class="table-responsive">
     <table class="table table-bordered table-striped table-hover compatibility">
         <thead>
@@ -110,13 +175,13 @@
                 <td><span title="사용가능합니다.">사용가능</span></td><!-- 사파리 -->
                 <td><span title="사용가능합니다.">사용가능</span></td><!-- 오페라 -->
                 <td><span title="사용가능합니다.">사용가능</span></td><!-- 네이버 -->
-                <td class="no"><span title="사용 할 수 없습니다.">사용안됨</span></td><!-- 익스플로러6 -->
-                <td class="no"><span title="사용 할 수 없습니다.">사용안됨</span></td><!-- 익스플로러7 -->
+                <td><span title="사용가능합니다.">사용가능</span></td><!-- 익스플로러6 -->
+                <td><span title="사용가능합니다.">사용가능</span></td><!-- 익스플로러7 -->
                 <td class="no"><span title="사용 할 수 없습니다.">사용안됨</span></td><!-- 익스플로러8 -->
                 <td class="no"><span title="사용 할 수 없습니다.">사용안됨</span></td><!-- 익스플로러9 -->
                 <td class="no"><span title="사용 할 수 없습니다.">사용안됨</span></td><!-- 익스플로러10 -->
                 <td class="no"><span title="사용 할 수 없습니다.">사용안됨</span></td><!-- 익스플로러11 -->
-                <td class="no"><span title="사용 할 수 없습니다.">사용안됨</span></td><!-- 엣지 -->
+                <td><span title="사용가능합니다.">사용가능</span></td><!-- 엣지 -->
                 <td><span title="사용가능합니다.">사용가능</span></td><!-- 안드로이드 -->
                 <td><span title="사용가능합니다.">사용가능</span></td><!-- IOS -->
             </tr>
@@ -125,8 +190,8 @@
 </div>
 
 
-
-
-
-</body>
-</html>
+<h4 class="pt40">참고(Reference)</h4>
+<ul>
+    <li>MDN <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/wbr" target="_blank"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></li>
+    <li>HTML5 <a href="https://www.w3.org/TR/html50/text-level-semantics.html#the-wbr-element"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></li>
+</ul>

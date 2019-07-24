@@ -1,22 +1,12 @@
-<!DOCTYPE html>
-<html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <title>HTML</title>
-</head>
-
-<body>
-
 
 
 <h2>&lt;track&gt;</h2>
-<p>&lt;track&gt; 태그는 미디어 요소의 트랙을 지정합니다.</p>
+<p>&lt;track&gt; 태그는 &lt;video&gt; 태그와 &lt;audio&gt; 태그의 자막을 설정합니다. 자막은 vvt 파일을 이용하여 사용합니다.</p>
 
 <hr>
 
 <h3>&lt;track&gt;</h3>
-<p class="blue">&lt;track&gt; 태그는 미디어 요소의 트랙을 지정합니다.</p>
+<p class="blue">&lt;track&gt; 태그는 미디어 요소의 자막을 정의합니다.</p>
 
 <div class="table-responsive">
     <table class="table table-bordered table-striped table-hover">
@@ -33,7 +23,7 @@
         <tbody>
             <tr>
                 <th><a href="http://webzz.tistory.com/223">카테고리</a></th>
-                <td>-</td>
+                <td><a href="http://webzz.tistory.com/223">해당 없음</a></td>
             </tr>
             <tr>
                 <th><a href="http://webzz.tistory.com/224">속성</a></th>
@@ -44,19 +34,19 @@
             </tr>
             <tr>
                 <th><a href="http://webzz.tistory.com/225">요소</a></th>
-                <td>-</td>
+                <td><a href="http://webzz.tistory.com/225">해당 없음</a></td>
             </tr>
             <tr>
                 <th><a href="http://webzz.tistory.com/225">닫는 태그</a></th>
-                <td>Self Closing(&lt;track /&gt;)</td>
+                <td><a href="http://webzz.tistory.com/225">닫는 태그 사용 안함(&lt;track /&gt;)</a></td>
             </tr>
             <tr>
                 <th><a href="http://webzz.tistory.com/228">버전</a></th>
-                <td>HTML5</td>
+                <td><a href="http://webzz.tistory.com/228">HTML5</a></td>
             </tr>
             <tr>
                 <th>시각적 표현</th>
-                <td>-</td>
+                <td>자막 표시</td>
             </tr>
         </tbody>
     </table>
@@ -65,8 +55,7 @@
 
 <h4 class="pt50">정의(Definition)</h4>
 <ul>
-    <li>&lt;track&gt; 태그는 미디어 요소의 트랙을 지정합니다.</li>
-    <li>&lt;track&gt; 태그는 자막이 필요하거나 미디어가 재생될 때 텍스트가 필요할 때 사용합니다.</li>
+    <li>&lt;track&gt; 태그는 미디어 요소의 자막을 설정합니다.</li>
     <li>&lt;track&gt; 태그는 <a href="http://webzz.tistory.com/237">&lt;audio&gt;</a> 태그 또는 <a href="http://webzz.tistory.com/351">&lt;video&gt;</a> 태그와 같이 사용합니다.</li>
 </ul>
 
@@ -140,9 +129,52 @@
 </div>
 
 
+<!-- Sample1 -->
+<h4 class="pt50">샘플(Sample)</h4>
+<div class="sample">
+    <h5>Sample1<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="ex">
+        <!-- ex -->
+        <div class="none">
+            <video width="100%" controls poster="https://tistory1.daumcdn.net/tistory/2933724/skin/images/blend01.jpg">
+                <source src="tutor.mp4" type="video/mp4">
+                <source src="tutor.ogv" type="video/ogv">
+                <track kind="captions" src="tutorCaptions.vtt" srclang="ko">
+                <track kind="descriptions" src="tutorDescriptions.vtt" srclang="ko">
+                <track kind="chapters" src="tutorChapters.vtt" srclang="ko">
+                <track kind="subtitles" src="tutorSubtitles_en.vtt" srclang="ko">
+                <track kind="metadata" src="tutorial1.vtt" srclang="ko" label="첫번째 강의">
+            </video>
+        </div>
+        <!-- ex -->
+    </div>
+</div>
 
 
-<h4 class="pt50">호환성(Compatibility) <a href="http://webzz.tistory.com/227" class="link"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/link.png"><span class="ir_pm">더보기</span></a></h4>
+<div class="sample">
+    <h5>html<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="html">
+<pre class="line-numbers"><code class="language-markup">&lt;video width="100%" controls poster="https://tistory1.daumcdn.net/tistory/2933724/skin/images/blend01.jpg"&gt;
+    &lt;source src="tutor.mp4" type="video/mp4"&gt;
+    &lt;source src="tutor.ogv" type="video/ogv"&gt;
+    &lt;track kind="captions" src="tutorCaptions.vtt" srclang="ko"&gt;
+    &lt;track kind="descriptions" src="tutorDescriptions.vtt" srclang="ko"&gt;
+    &lt;track kind="chapters" src="tutorChapters.vtt" srclang="ko"&gt;
+    &lt;track kind="subtitles" src="tutorSubtitles_en.vtt" srclang="ko"&gt;
+    &lt;track kind="metadata" src="tutorial1.vtt" srclang="ko" label="첫번째 강의"&gt;
+&lt;/video&gt;
+</code></pre>
+    </div>
+</div>
+<!-- sample -->
+
+
+
+
+<h4 class="pt50">호환성(Compatibility) 
+    <a href="http://webzz.tistory.com/227" class="link"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/link.png"><span class="ir_pm">더보기</span></a>
+    <span class="can">caniuse.com <a href="https://caniuse.com/#search=track" target="_blank"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></span>
+</h4>
 <div class="table-responsive">
     <table class="table table-bordered table-striped table-hover compatibility">
         <thead>
@@ -274,7 +306,9 @@
 
 
 
+<h4 class="pt40">참고(Reference)</h4>
+<ul>
+    <li>MDN <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/track" target="_blank"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></li>
+    <li>HTML5 <a href="https://www.w3.org/TR/html50/embedded-content-0.html#the-track-element"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></li>
+</ul>
 
-</body>
-
-</html>

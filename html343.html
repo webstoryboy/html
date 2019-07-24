@@ -1,22 +1,13 @@
-<!DOCTYPE html>
-<html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <title>HTML</title>
-</head>
-
-<body>
 
 
 
 <h2>&lt;time&gt;</h2>
-<p>&lt;time&gt; 태그는 날자와 시간을 정의합니다.</p>
+<p>&lt;time&gt; 태그는 시간의 특정 기간을 나타낼 때 사용합니다. 날짜를 인식하기 위해서는 datetime 속성을 같이 사용하며 엔진 결과나 알림 같은 기능을 개선 할 수 있습니다. 시간은 24시간을 기준으로 설정하며 날짜는 그레고리력(Gregorian calendar)을 기준으로 표현합니다.</p>
 
 <hr>
 
 <h3>&lt;time&gt;</h3>
-<p class="blue">&lt;time&gt; 태그는 날자와 시간을 정의합니다.</p>
+<p class="blue">&lt;time&gt; 태그는 날짜와 시간을 정의합니다.</p>
 
 <div class="table-responsive">
     <table class="table table-bordered table-striped table-hover">
@@ -52,15 +43,15 @@
             </tr>
             <tr>
                 <th><a href="http://webzz.tistory.com/225">닫는 태그</a></th>
-                <td>닫는 태그 사용(&lt;time&gt; ~ &lt;/time&gt;)</td>
+                <td><a href="http://webzz.tistory.com/225">닫는 태그 사용(&lt;time&gt; ~ &lt;/time&gt;)</a></td>
             </tr>
             <tr>
                 <th><a href="http://webzz.tistory.com/228">버전</a></th>
-                <td>HTML5</td>
+                <td><a href="http://webzz.tistory.com/228">HTML5</a></td>
             </tr>
             <tr>
                 <th>시각적 표현</th>
-                <td>-</td>
+                <td>시각적인 표현은 없음, 브라우저가 인식할 수 있음</td>
             </tr>
         </tbody>
     </table>
@@ -69,9 +60,20 @@
 
 <h4 class="pt50">정의(Definition)</h4>
 <ul>
-    <li>&lt;time&gt; 태그는 날자와 시간을 정의합니다.</li>
+    <li>&lt;time&gt; 태그는 날짜와 시간을 정의합니다.</li>
 </ul>
 
+<h4 class="pt50">Datetime 속성</h4>
+<p>datetime은 브라우저가 인식할 수 있는 속성입니다. 데이터 타임은 형식에 맞게 작성하여야 합니다.</p>
+<ul>
+    <li>년도만 표시하는 경우 : 2019</li>
+    <li>년도와 달을 표시하는 경우 : 2019-07</li>
+    <li>년도, 달, 날짜를 표시하는 경우 : 2019-07-18</li>
+    <li>주를 표시하는 경우 : 2019-W43</li>
+    <li>시간을 표현하는 경우 : 15:30</li>
+    <li>시간 및 초를 표현하는 경우 : 15:30:34, 15:30:34.345</li>
+    <li>모두 표시하는 경우 : 2019-07-18 15:30:34.345</li>
+</ul>
 
 
 <h4 class="pt50">속성(Property)</h4>
@@ -95,7 +97,7 @@
             <tr>
                 <td>datetime</td>
                 <td>datetime="2016-10-14"</td>
-                <td>날자를 나타낼 때 사용합니다.</td>
+                <td>날짜와 시간을 나타낼 때 사용합니다.</td>
                 <td class="ce">-</td>
             </tr>
         </tbody>
@@ -105,7 +107,10 @@
 
 
 
-<h4 class="pt50">호환성(Compatibility) <a href="http://webzz.tistory.com/227" class="link"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/link.png"><span class="ir_pm">더보기</span></a></h4>
+<h4 class="pt50">호환성(Compatibility) 
+    <a href="http://webzz.tistory.com/227" class="link"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/link.png"><span class="ir_pm">더보기</span></a>
+    <span class="can">caniuse.com <a href="https://caniuse.com/#search=semantic" target="_blank"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></span>
+</h4>
 <div class="table-responsive">
     <table class="table table-bordered table-striped table-hover compatibility">
         <thead>
@@ -138,9 +143,9 @@
                 <td class="no"><span title="사용 할 수 없습니다.">사용안됨</span></td><!-- 익스플로러6 -->
                 <td class="no"><span title="사용 할 수 없습니다.">사용안됨</span></td><!-- 익스플로러7 -->
                 <td class="no"><span title="사용 할 수 없습니다.">사용안됨</span></td><!-- 익스플로러8 -->
-                <td class="no"><span title="사용 할 수 없습니다.">사용안됨</span></td><!-- 익스플로러9 -->
-                <td class="no"><span title="사용 할 수 없습니다.">사용안됨</span></td><!-- 익스플로러10 -->
-                <td class="no"><span title="사용 할 수 없습니다.">사용안됨</span></td><!-- 익스플로러11 -->
+                <td><span title="사용가능합니다.">사용가능</span></td><!-- 익스플로러9 -->
+                <td><span title="사용가능합니다.">사용가능</span></td><!-- 익스플로러10 -->
+                <td><span title="사용가능합니다.">사용가능</span></td><!-- 익스플로러11 -->
                 <td><span title="사용가능합니다.">사용가능</span></td><!-- 엣지 -->
                 <td><span title="사용가능합니다.">사용가능</span></td><!-- 안드로이드 -->
                 <td><span title="사용가능합니다.">사용가능</span></td><!-- IOS -->
@@ -155,9 +160,9 @@
                 <td class="no"><span title="사용 할 수 없습니다.">사용안됨</span></td><!-- 익스플로러6 -->
                 <td class="no"><span title="사용 할 수 없습니다.">사용안됨</span></td><!-- 익스플로러7 -->
                 <td class="no"><span title="사용 할 수 없습니다.">사용안됨</span></td><!-- 익스플로러8 -->
-                <td class="no"><span title="사용 할 수 없습니다.">사용안됨</span></td><!-- 익스플로러9 -->
-                <td class="no"><span title="사용 할 수 없습니다.">사용안됨</span></td><!-- 익스플로러10 -->
-                <td class="no"><span title="사용 할 수 없습니다.">사용안됨</span></td><!-- 익스플로러11 -->
+                <td><span title="사용가능합니다.">사용가능</span></td><!-- 익스플로러9 -->
+                <td><span title="사용가능합니다.">사용가능</span></td><!-- 익스플로러10 -->
+                <td><span title="사용가능합니다.">사용가능</span></td><!-- 익스플로러11 -->
                 <td><span title="사용가능합니다.">사용가능</span></td><!-- 엣지 -->
                 <td><span title="사용가능합니다.">사용가능</span></td><!-- 안드로이드 -->
                 <td><span title="사용가능합니다.">사용가능</span></td><!-- IOS -->
@@ -168,6 +173,8 @@
 
 
 
-
-</body>
-</html>
+<h4 class="pt40">참고(Reference)</h4>
+<ul>
+    <li>MDN <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time" target="_blank"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></li>
+    <li>HTML5.1 <a href="https://www.w3.org/TR/html51/grouping-content.html#the-time-element"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></li>
+</ul>

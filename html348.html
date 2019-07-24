@@ -1,17 +1,11 @@
-<!DOCTYPE html>
-<html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <title>HTML</title>
-</head>
-
-<body>
-
 
 
 <h2>&lt;u&gt;</h2>
-<p>&lt;u&gt; 태그는 맞춤법이 틀린 단어를 표시할 때 정의합니다.</p>
+<p>&lt;u&gt; 태그는 HTML4에서는 밑줄을 표시하기 위해서 사용하였습니다. 하지만 밑줄 기능은 CSS로 충분히 표현 가능하기 때문에 더 이상 사용하지 않게
+되었습니다. HTML5에서는 철자 오류 및 주석 표시를 위한 태그로 의미가 변경되었습니다. 이 태그는 밑줄을 표시하기 위한 디자인적인 요소로 사용하면 안됩니다. 철자 오류
+및 주석 표시를 위한 태그입니다. 밑줄을 표시하기 위함이라면 text-decoration 속성을 이용하면 됩니다</p>
+
+<p>&lt;u&gt; 태그는 철자 오류가 포함된 단락을 표시하며, 빨간색 물결 밑줄 스타일로 오류를 표시합니다.</p>
 
 <hr>
 
@@ -52,15 +46,15 @@
             </tr>
             <tr>
                 <th><a href="http://webzz.tistory.com/225">닫는 태그</a></th>
-                <td>닫는 태그 사용(&lt;u&gt; ~ &lt;/u&gt;)</td>
+                <td><a href="http://webzz.tistory.com/225">닫는 태그 사용(&lt;u&gt; ~ &lt;/u&gt;)</a></td>
             </tr>
             <tr>
                 <th><a href="http://webzz.tistory.com/228">버전</a></th>
-                <td>HTML4(HTML5에서 의미 변경)</td>
+                <td><a href="http://webzz.tistory.com/228">HTML4(HTML5에서 의미 변경)</a></td>
             </tr>
             <tr>
                 <th>시각적 표현</th>
-                <td>밑줄</td>
+                <td>빨간색 물결 밑줄</td>
             </tr>
         </tbody>
     </table>
@@ -79,6 +73,7 @@
 </ul>
 
 
+
 <h4 class="pt50">비교(Compare)</h4>
 <ul>
     <li>글씨를 특별한 이유로 평범한 글자와 구분하기 위해서는 <a href="http://webzz.tistory.com/283">&lt;i&gt;</a> 태그를 사용합니다.</li>
@@ -90,14 +85,99 @@
     <li>글씨를 위첨자로 표현하고 싶다면 <a href="http://webzz.tistory.com/333">&lt;sup&gt;</a> 태그를 사용합니다.</li>
     <li>글씨를 아래첨자로 표현하고 싶다면 <a href="http://webzz.tistory.com/331">&lt;sub&gt;</a> 태그를 사용합니다.</li>
     <li>글씨의 맞춤법이 틀린 단어를 표현하고 싶다면 <a href="http://webzz.tistory.com/348">&lt;u&gt;</a> 태그를 사용합니다</li>
+    <li>글씨의 저작권 및 법적 텍스트 표현은 <a href="http://webzz.tistory.com/325">&lt;small&gt;</a> 태그를 사용합니다.</li>
 </ul>
 
 
 
+<!-- Sample1 -->
+<h4 class="pt50">Sample1</h4>
+<div class="sample">
+    <h5>결과<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="ex">
+        <!-- ex -->
+        <div class="none">
+            <ul>
+                <li>글씨를 특별한 이유로 평범한 글자와 구분하기 위해서는 <i>&lt;i&gt;</i> 태그를 사용합니다.</li>
+                <li>글씨를 중요성과 관련성을 전달하지 않고, 다른 텍스트와 구별 할 때 <b>&lt;b&gt;</b> 태그를 사용합니다.</li>
+                <li>글씨를 강조하고 싶다면 <em>&lt;em&gt;</em> 태그를 사용합니다.</li>
+                <li>글씨의 중요성을 강조하고 싶다면 <strong>&lt;strong&gt;</strong> 태그를 사용합니다.</li>
+                <li>글씨의 중요성과 강조를 고려하지 않는 단순 참고용 표시를 사용한다면 <mark>&lt;mark&gt;</mark> 태그를 사용합니다.</li>
+                <li>글씨의 전문적인 용어를 정의할 때는 <dfn>&lt;dfn&gt;</dfn> 태그를 사용합니다.</li>
+                <li>글씨를 위첨자로 표현하고 싶다면 <sup>&lt;sup&gt;</sup> 태그를 사용합니다.</li>
+                <li>글씨를 아래첨자로 표현하고 싶다면 <sub>&lt;sub&gt;</sub> 태그를 사용합니다.</li>
+                <li>글씨의 맞춤법이 틀린 단어를 표현하고 싶다면 <u>&lt;u&gt;</u> 태그를 사용합니다</li>
+                <li>글씨의 저작권 및 법적인 텍스트 표현은 <small>&lt;small&gt;</small> 태그를 사용합니다.</li>
+            </ul>
+        </div>
+        <!-- ex -->
+    </div>
+</div>
+<div class="sample">
+    <h5>html<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="html">
+<pre class="line-numbers"><code class="language-markup">&lt;ul&gt;
+    &lt;li&gt;글씨를 특별한 이유로 평범한 글자와 구분하기 위해서는 &lt;i&gt;i&lt;/i&gt; 태그를 사용합니다.&lt;/li&gt;
+    &lt;li&gt;글씨를 중요성과 관련성을 전달하지 않고, 다른 텍스트와 구별 할 때 &lt;b&gt;b&lt;/b&gt; 태그를 사용합니다.&lt;/li&gt;
+    &lt;li&gt;글씨를 강조하고 싶다면 &lt;em&gt;em&lt;/em&gt; 태그를 사용합니다.&lt;/li&gt;
+    &lt;li&gt;글씨의 중요성을 강조하고 싶다면 &lt;strong&gt;strong&lt;/strong&gt; 태그를 사용합니다.&lt;/li&gt;
+    &lt;li&gt;글씨의 중요성과 강조를 고려하지 않는 단순 참고용 표시를 사용한다면 &lt;mark&gt;mark&lt;/mark&gt; 태그를 사용합니다.&lt;/li&gt;
+    &lt;li&gt;글씨의 전문적인 용어를 정의할 때는 &lt;dfn&gt;dfn&lt;/dfn&gt; 태그를 사용합니다.&lt;/li&gt;
+    &lt;li&gt;글씨를 위첨자로 표현하고 싶다면 &lt;sup&gt;sup&lt;/sup&gt; 태그를 사용합니다.&lt;/li&gt;
+    &lt;li&gt;글씨를 아래첨자로 표현하고 싶다면 &lt;sub&gt;sub&lt;/sub&gt; 태그를 사용합니다.&lt;/li&gt;
+    &lt;li&gt;글씨의 맞춤법이 틀린 단어를 표현하고 싶다면 &lt;u&gt;u&lt;/u&gt; 태그를 사용합니다&lt;/li&gt;
+    &lt;li&gt;글씨의 저작권 및 법적인 텍스트 표현은 &lt;small&gt;small&lt;/small&gt; 태그를 사용합니다.&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+    </div>
+</div>
+<!-- sample1 -->
 
 
 
-<h4 class="pt50">호환성(Compatibility) <a href="http://webzz.tistory.com/227" class="link"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/link.png"><span class="ir_pm">더보기</span></a></h4>
+
+<!-- Sample1 -->
+<style>
+    .none u.spelling {text-decoration: red wavy underline;}
+</style>
+<h4 class="pt50">샘플(Sample)</h4>
+<p>맞춤법이 틀렸을 경우 사용하는 예제입니다.</p>
+<div class="sample">
+    <h5>Sample1<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="ex">
+        <!-- ex -->
+        <div class="none">
+            <p>그녀는 나에게 대화를 걸었지만, 나는 <u class="spelling">몰르는</u> 척 하고 지나가버렸다.</p>
+        </div>
+        <!-- ex -->
+    </div>
+</div>
+<!-- sample -->
+
+<div class="sample">
+    <h5>HTML<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="html">
+<pre class="line-numbers"><code class="language-markup">&lt;p&gt;그녀는 나에게 대화를 걸었지만, 나는 &lt;u class="spelling"&gt;몰르는&lt;/u&gt; 척 하고 지나가버렸다.&lt;/p&gt;
+</code></pre>
+    </div>
+</div>
+
+<div class="sample">
+    <h5>CSS<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="html">
+<pre class="line-numbers"><code class="language-css">u.spelling {text-decoration: red wavy underline;}
+</code></pre>
+    </div>
+</div>
+<!-- sample -->
+
+
+
+
+<h4 class="pt50">호환성(Compatibility) 
+    <a href="http://webzz.tistory.com/227" class="link"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/link.png"><span class="ir_pm">더보기</span></a>
+    <span class="can">caniuse.com <a href="https://caniuse.com/#search=<u>" target="_blank"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></span>
+</h4>
 <div class="table-responsive">
     <table class="table table-bordered table-striped table-hover compatibility">
         <thead>
@@ -141,9 +221,21 @@
     </table>
 </div>
 
+<h4 class="pt40">참고(Reference)</h4>
+<ul>
+    <li>MDN <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/u" target="_blank"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></li>
+    <li>HTML5 <a href="https://www.w3.org/TR/html50/text-level-semantics.html#the-u-element"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></li>
+    <li>HTML4.01 <a href="https://www.w3.org/TR/html401/present/graphics.html#h-15.2.1"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></li>
+</ul>
 
 
 
 
-</body>
-</html>
+
+
+
+
+
+
+
+

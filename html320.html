@@ -1,19 +1,11 @@
-<!DOCTYPE html>
-<html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <title>HTML</title>
-</head>
-
-<body>
 
 
 
 <h2>&lt;s&gt;</h2>
-<p>&lt;s&gt; 태그는 정확하지 않거나 올바르지 않은 텍스트를 정의합니다.</p>
+<p>&lt;s&gt; 요소는 텍스트에 취소선을 나타냅니다. 더 이상 텍스트와 관련이 없거나 적절하지 않은 것을 나타낼 때 사용합니다. 문서 편집을 위한 텍스트 수정은 &lt;del&gt; 또는 &lt;ins&gt; 태그를 사용합니다.</p>
 
 <hr>
+
 
 <h3>&lt;s&gt;</h3>
 <p class="blue">&lt;s&gt; 태그는 정확하지 않거나 올바르지 않은 텍스트를 정의합니다.</p>
@@ -51,11 +43,11 @@
             </tr>
             <tr>
                 <th><a href="http://webzz.tistory.com/225">닫는 태그</a></th>
-                <td>닫는 태그 사용(&lt;s&gt; ~ &lt;/s&gt;)</td>
+                <td><a href="http://webzz.tistory.com/225">닫는 태그 사용(&lt;s&gt; ~ &lt;/s&gt;)</a></td>
             </tr>
             <tr>
                 <th><a href="http://webzz.tistory.com/228">버전</a></th>
-                <td>HTML4</td>
+                <td><a href="http://webzz.tistory.com/228">HTML4</a></td>
             </tr>
             <tr>
                 <th>시각적 표현</th>
@@ -68,8 +60,10 @@
 
 <h4 class="pt50">정의(Definition)</h4>
 <ul>
-    <li>&lt;s&gt; 태그는 정확하지 않고, 관련성이 없고, 올바르지 않지만 삭제해서는 안 되는 내용을 표시하는데 사용합니다.</li>
+    <li>&lt;s&gt; 요소는 텍스트가 정확하지 않고, 관련성이 없는 내용을 표시하는데 사용합니다.</li>
+    <li>문서를 편집하는 경우라면 &lt;del&gt; 태그와 &lt;ins&gt; 태그를 사용합니다.</li>
     <li>&lt;s&gt; 태그는 주로 할인된 가격에 표시합니다.</li>
+    <li>단순하게 취소선을 보여주고 싶다면 text-decoration:line-through;을 통하여 설정할 수 있습니다.</li>
 </ul>
 
 
@@ -83,14 +77,69 @@
 <ul>
     <li>문서에서 삭제된 텍스트틀 표시하려면 <a href="http://webzz.tistory.com/259">&lt;del&gt;</a> 태그를 사용합니다.</li>
     <li>문서에서 삽입된 텍스트를 표시하려면 <a href="http://webzz.tistory.com/287">&lt;ins&gt;</a> 태그를 사용합니다.</li>
-    <li>정확하지 않고, 관련성이 없고, 삭제해서는 안 되는 내용을 표시하려면 <a href="http://webzz.tistory.com/320">&lt;s&gt;</a> 태그를 사용합니다.</li>
+    <li>정확하지 않고, 관련성이 없는 텍스트를 표시하려면 <a href="http://webzz.tistory.com/320">&lt;s&gt;</a> 태그를 사용합니다.</li>
 </ul>
 
 
+<!-- Sample1 -->
+<h4 class="pt50">Sample1</h4>
+<p>텍스트와 관련이 없거나 적절하지 않은 것을 나타낼 때 사용하는 예제입니다.</p>
+<div class="sample">
+    <h5>결과<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="ex">
+        <!-- ex -->
+        <div class="none">
+            <p><s>스터디 인원은 이번 주까지 모집합니다.</s></p>
+            <p>이번주 인원 모집이 완료되었습니다.</p>
+        </div>
+        <!-- ex -->
+    </div>
+</div>
+<div class="sample">
+    <h5>html<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="html">
+<pre class="line-numbers"><code class="language-markup">&lt;p&gt;&lt;s&gt;스터디 인원은 이번 주까지 모집합니다.&lt;/s&gt;&lt;/p&gt;
+&lt;p&gt;이번주 인원 모집이 완료되었습니다.&lt;/p&gt;
+</code></pre>
+    </div>
+</div>
+<!-- sample1 -->
+
+
+<!-- Sample2 -->
+<h4 class="pt50">Sample2</h4>
+<p>새로운 판매 가격 표시하고 예전 가격은 적합하지 않는 텍스트로 보여주는 예제입니다.</p>
+<div class="sample">
+    <h5>결과<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="ex">
+        <!-- ex -->
+        <div class="none">
+            <p>[럭키딜] GAP 스테비 후무사 자두 2kg</p>
+            <p><s>한 박스에 14000원</s></p>
+            <p><strong>지금은 단지 9,900원</strong></p>
+        </div>
+        <!-- ex -->
+    </div>
+</div>
+<div class="sample">
+    <h5>html<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="html">
+<pre class="line-numbers"><code class="language-markup">&lt;p&gt;[럭키딜] GAP 스테비 후무사 자두 2kg&lt;/p&gt;
+&lt;p>&lt;s&gt;한 박스에 14000원&lt;/s&gt;&lt;/p&gt;
+&lt;p>&lt;strong&gt;지금은 단지 9,900원&lt;/strong>&lt;/p&gt;
+</code></pre>
+    </div>
+</div>
+<!-- sample2 -->
 
 
 
-<h4 class="pt50">호환성(Compatibility) <a href="http://webzz.tistory.com/227" class="link"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/link.png"><span class="ir_pm">더보기</span></a></h4>
+
+
+<h4 class="pt50">호환성(Compatibility) 
+    <a href="http://webzz.tistory.com/227" class="link"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/link.png"><span class="ir_pm">더보기</span></a>
+    <span class="can">caniuse.com <a href="https://caniuse.com/#search=%3Cstrong%3E" target="_blank"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></span>
+</h4>
 <div class="table-responsive">
     <table class="table table-bordered table-striped table-hover compatibility">
         <thead>
@@ -137,6 +186,13 @@
 
 
 
+<h4 class="pt40">참고(Reference)</h4>
+<ul>
+    <li>MDN <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/s" target="_blank"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></li>
+    <li>HTML5 <a href="https://www.w3.org/TR/html50/obsolete.html#strike" target="_blank"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></li>
+</ul>
 
-</body>
-</html>
+
+
+
+

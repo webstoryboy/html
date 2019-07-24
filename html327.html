@@ -1,17 +1,8 @@
-<!DOCTYPE html>
-<html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <title>HTML</title>
-</head>
-
-<body>
 
 
 
 <h2>&lt;span&gt;</h2>
-<p>&lt;span&gt; 태그는 인라인 요소 그룹화를 정의합니다.</p>
+<p>&lt;span&gt; 태그는 콘텐츠 요소를 표현하기 위한 인라인 요소이며, 의미가 없는 그룹화 요소입니다. 적절한 의미에 맞는 요소가 없거나 그룹화할 때 사용하며 &lt;div&gt; 요소와 비교가 됩니다. &lt;div&gt; 태그는 블록구조이며  &lt;span&gt; 태그는 인라인 구조입니다.</p>
 
 <hr>
 
@@ -51,11 +42,11 @@
             </tr>
             <tr>
                 <th><a href="http://webzz.tistory.com/225">닫는 태그</a></th>
-                <td>닫는 태그 사용(&lt;span&gt; ~ &lt;/span&gt;)</td>
+                <td><a href="http://webzz.tistory.com/225">닫는 태그 사용(&lt;span&gt; ~ &lt;/span&gt;)</a></td>
             </tr>
             <tr>
                 <th><a href="http://webzz.tistory.com/228">버전</a></th>
-                <td>HTML5</td>
+                <td><a href="http://webzz.tistory.com/228">HTML4</a></td>
             </tr>
             <tr>
                 <th>시각적 표현</th>
@@ -76,13 +67,73 @@
 
 <h4 class="pt50">비교(Compare)</h4>
 <ul>
-    <li><a href="http://webzz.tistory.com/264">&lt;div&gt;</a> 태그는 블록 요소를 그룹화하고, <a href="http://webzz.tistory.com/327">&lt;span&gt;</a> 태그는 인라인 요소를 그룹화합니다.</li>
+    <li>블록 요소를 그룹화한다면 <a href="http://webzz.tistory.com/264">&lt;div&gt;</a> 태그를 사용합니다.</li>
+    <li>인라인 요소를 그룹화한다면 <a href="http://webzz.tistory.com/327">&lt;inline&gt;</a> 태그를 사용합니다.</li>
 </ul>
 
 
+<!-- Sample1 -->
+<h4 class="pt50">Sample1</h4>
+<p>적절하게 사용할 태그가 없다면 &lt;span&gt; 태그를 사용하는 예제입니다.</p>
+<div class="sample">
+    <h5>결과<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="ex">
+        <!-- ex -->
+        <div class="none">
+            <p><span>span 태그는 주변 요소와 구별하기 위하거나 다른 적절한 태그가 없는 경우에 사용합니다</span></p>
+        </div>
+        <!-- ex -->
+    </div>
+</div>
+<div class="sample">
+    <h5>html<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="html">
+<pre class="line-numbers"><code class="language-markup">&lt;p&gt;&lt;span&gt;span 태그는 주변 요소와 구별하기 위하거나 다른 적절한 태그가 없는 경우에 사용합니다&lt;/span&gt;&lt;/p&gt;
+</code></pre>
+    </div>
+</div>
+<!-- sample1 -->
 
 
-<h4 class="pt50">호환성(Compatibility) <a href="http://webzz.tistory.com/227" class="link"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/link.png"><span class="ir_pm">더보기</span></a></h4>
+<style>
+    .none .yellow {color: #ff6a00;}
+</style>
+<!-- Sample2 -->
+<h4 class="pt50">Sample2</h4>
+<p>&lt;span&gt; 태그는 CSS 스타일링 사용을 위해 사용하는 예제입니다.</p>
+<div class="sample">
+    <h5>결과<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="ex">
+        <!-- ex -->
+        <div class="none">
+            <p>span 태그는 CSS 스타일링 사용을 위해 <span class="yellow">설정</span>하는 경우가 많습니다.</p>
+        </div>
+        <!-- ex -->
+    </div>
+</div>
+<div class="sample">
+    <h5>html<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="html">
+<pre class="line-numbers"><code class="language-markup">&lt;p&gt;span 태그는 CSS 스타일링 사용을 위해 &lt;span class="yellow"&gt;설정&lt;/span&gt;하는 경우가 많습니다.&lt;/p&gt;
+</code></pre>
+    </div>
+</div>
+<div class="sample">
+    <h5>css<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="html">
+<pre class="line-numbers"><code class="language-css">.yellow {color: #ff6a00;}
+</code></pre>
+    </div>
+</div>
+<!-- sample2 -->
+
+
+
+
+<h4 class="pt50">호환성(Compatibility) 
+    <a href="http://webzz.tistory.com/227" class="link"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/link.png"><span class="ir_pm">더보기</span></a>
+    <span class="can">caniuse.com <a href="https://caniuse.com/#search=strike" target="_blank"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></span>
+</h4>
 <div class="table-responsive">
     <table class="table table-bordered table-striped table-hover compatibility">
         <thead>
@@ -128,7 +179,10 @@
 
 
 
+<h4 class="pt40">참고(Reference)</h4>
+<ul>
+    <li>MDN <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span" target="_blank"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></li>
+    <li>HTML5 <a href="https://www.w3.org/TR/html50/text-level-semantics.html#the-span-element" target="_blank"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></li>
+</ul>
 
 
-</body>
-</html>

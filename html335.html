@@ -1,17 +1,14 @@
-<!DOCTYPE html>
-<html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <title>HTML</title>
-</head>
-
-<body>
 
 
 
 <h2>&lt;table&gt;</h2>
-<p>&lt;table&gt; 태그는 표를 정의합니다.</p>
+<p>&lt;table&gt; 태그는 표를 만들 때 사용합니다. 테이블은 테이터를 포함하는 셀의 행과 열로 구성된 정보표입니다. 예전에는 테이블을 이용해서 레이아웃을
+표현한 적도 있지만 웹표준을 준수해야 하는 현재는 테이블을 이용해서 레이아웃을 만드는 것은 적절하지 않습니다. 테이블을 쓰기 위해서는 즉 표를 만들기 위해서는
+제목, 설명, 셀, 셀합치기, 표 구조, 셀 그룹 등 여러가지를 신경써야 합니다.</p>
+
+<p>테이블은 제목을 표시하기 위해 &lt;caption&gt;을 사용하고 셀 요소를 그룹화하기 위해 &lt;colgroup&gt;과 &lt;col&gt;을 사용합니다.
+테이블 전체 구조를 분리하기 위해 &lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;를 사용하며, 행과 열을 나타내는 &lt;tr&gt;, &lt;td&gt; &lt;th&gt;
+등을 사용합니다. 여기에 접근성을 위해 scope 속성을 사용하고 셀의 병합을 위해 colspan과 rowspan을 사용하게 됩니다.</p>
 
 <hr>
 
@@ -48,15 +45,15 @@
             </tr>
             <tr>
                 <th><a href="http://webzz.tistory.com/225">닫는 태그</a></th>
-                <td>닫는 태그 사용(&lt;table&gt; ~ &lt;/table&gt;)</td>
+                <td><a href="http://webzz.tistory.com/225">닫는 태그 사용(&lt;table&gt; ~ &lt;/table&gt;)</a></td>
             </tr>
             <tr>
                 <th><a href="http://webzz.tistory.com/228">버전</a></th>
-                <td>HTML4</td>
+                <td><a href="http://webzz.tistory.com/228">HTML4</a></td>
             </tr>
             <tr>
                 <th>시각적 표현</th>
-                <td>-</td>
+                <td>표</td>
             </tr>
         </tbody>
     </table>
@@ -68,7 +65,7 @@
     <li>&lt;table&gt; 태그는 표를 정의합니다.</li>
     <li>&lt;table&gt; 태그는 기본적으로 &lt;tr&gt;, &lt;td&gt;, &lt;th&gt;로 구성되어 있습니다.</li>
     <li>&lt;table&gt; 태그는 추가적으로 &lt;caption&gt;, &lt;col&gt;, &lt;colgroup&gt;, &lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt; 요소를 포함하고 있습니다.</li>
-    <li>&lt;table&gt; 태그는 주로 게시판 영역이나 회원가입 영역에 사용합니다.</li>
+    <li>&lt;table&gt; 태그는 주로 게시판 영역이나 회원가입 영역, 표를 나타내는 영역에서 많이 사용합니다.</li>
     <li>레이아웃을 목적으로 사용은 적합하지 않지만, 예외적으로 메일을 보낼 때는 레이아웃을 목적으로 사용이 가능합니다.</li>
 </ul>
 
@@ -90,6 +87,134 @@
 <ul>
     <li>HTML5에서는 "align", "bgcolor", "border", "cellpadding", "cellspacing", "frame", "rules", "summary", "width" 속성을 지원하지 않습니다.</li>
 </ul>
+
+
+
+
+
+<!-- Sample1 -->
+<h4 class="pt50">샘플(Sample)</h4>
+<p>thead와 tbody를 사용한 표입니다.</p>
+<div class="sample">
+    <h5>Sample1<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="ex">
+        <!-- ex -->
+        <div class="none">
+            <table>
+                <thead>
+                    <tr>
+                        <th>테이블 제목1</th>
+                        <th>테이블 제목2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>셀 내용1</td>
+                        <td>셀 내용2</td>
+                    </tr>
+                </tbody> 
+            </table>
+        </div>
+        <!-- ex -->
+    </div>
+</div>
+
+<div class="sample">
+    <h5>html<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="html">
+<pre class="line-numbers"><code class="language-markup">&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th>테이블 제목1&lt;/th&gt;
+            &lt;th>테이블 제목2&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td>셀 내용1&lt;/td&gt;
+            &lt;td>셀 내용2&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt; 
+&lt;/table&gt;
+</code></pre>
+    </div>
+</div>
+<!-- sample1 -->
+
+
+<style>
+    .none2 table {width: 100%;}
+    .none2 table th {border: 1px solid #ccc;}
+    .none3 table td {border: 1px solid #ccc;}
+</style>
+<!-- Sample2 -->
+<h4 class="pt50">샘플(Sample)</h4>
+<p>thead와 tbody를 사용한 표입니다.</p>
+<div class="sample">
+    <h5>Sample1<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="ex">
+        <!-- ex -->
+        <div class="none none2">
+            <table>
+                <caption>table 태그 속성</caption>
+                <thead>
+                    <tr>
+                        <th>속성</th>
+                        <th>값</th>
+                        <th>설명</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>align</td>
+                        <td>left</td>
+                        <td>테이블을 왼쪽으로 정렬합니다.</td>
+                    </tr>
+                    <tr>
+                        <td>bgcolor</td>
+                        <td>bgcolor="blue"</td>
+                        <td>테이블의 배경색을 설정합니다.</td>
+                    </tr>
+                    <tr>
+                        <td>border</td>
+                        <td>border="1"</td>
+                        <td>테이블의 보더 값을 설정합니다.</td>
+                    </tr>
+                </tbody> 
+            </table>
+        </div>
+        <!-- ex -->
+    </div>
+</div>
+<div class="sample">
+    <h5>html<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="html">
+<pre class="line-numbers"><code class="language-markup">&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th>테이블 제목1&lt;/th&gt;
+            &lt;th>테이블 제목2&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td>셀 내용1&lt;/td&gt;
+            &lt;td>셀 내용2&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt; 
+&lt;/table&gt;
+</code></pre>
+    </div>
+</div>
+<!-- //Sample2 -->
+
+
+
+
+
+
+
+
 
 <h4 class="pt50">속성(Property)</h4>
 <div class="table-responsive">
@@ -192,7 +317,10 @@
 
 
 
-<h4 class="pt50">호환성(Compatibility) <a href="http://webzz.tistory.com/227" class="link"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/link.png"><span class="ir_pm">더보기</span></a></h4>
+<h4 class="pt50">호환성(Compatibility) 
+    <a href="http://webzz.tistory.com/227" class="link"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/link.png"><span class="ir_pm">더보기</span></a>
+    <span class="can">caniuse.com <a href="https://caniuse.com/#search=<table>" target="_blank"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></span>
+</h4>
 <div class="table-responsive">
     <table class="table table-bordered table-striped table-hover compatibility">
         <thead>
@@ -394,6 +522,9 @@
 
 
 
-</body>
+<h4 class="pt40">참고(Reference)</h4>
+<ul>
+    <li>MDN <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table" target="_blank"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></li>
+    <li>HTML <a href="https://www.w3.org/TR/html50/tabular-data.html#the-table-element"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></li>
+</ul>
 
-</html>

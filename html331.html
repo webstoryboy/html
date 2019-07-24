@@ -1,17 +1,8 @@
-<!DOCTYPE html>
-<html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <title>HTML</title>
-</head>
-
-<body>
-
 
 
 <h2>&lt;sub&gt;</h2>
-<p>&lt;sub&gt; 태그는 텍스트 아래첨자를 정의합니다.</p>
+<p>&lt;sub&gt; 태그는 텍스트의 아래첨자를 사용할 때 쓰입니다. 주로 수학적인 공식이나 화학식에서 많이 사용하게 됩니다. &lt;sub&gt; 태그는 디자인적인 요소를 사용하는 것은 적합하지 않습니다. &lt;sub&gt; 태그의 위치는 변경이 필요한 경우에는 vertical-align 속성을 사용하면 변경할 수 있으며, 이런 모양이나 위치는 브라우저마다 틀릴 수 있으니 확인이 필요합니다. </p>
+
 
 <hr>
 
@@ -51,11 +42,11 @@
             </tr>
             <tr>
                 <th><a href="http://webzz.tistory.com/225">닫는 태그</a></th>
-                <td>닫는 태그 사용(&lt;sub&gt; ~ &lt;/sub&gt;)</td>
+                <td><a href="http://webzz.tistory.com/225">닫는 태그 사용(&lt;sub&gt; ~ &lt;/sub&gt;)</a></td>
             </tr>
             <tr>
                 <th><a href="http://webzz.tistory.com/228">버전</a></th>
-                <td>HTML4</td>
+                <td><a href="http://webzz.tistory.com/228">HTML4</a></td>
             </tr>
             <tr>
                 <th>시각적 표현</th>
@@ -69,9 +60,9 @@
 <h4 class="pt50">정의(Definition)</h4>
 <ul>
     <li>&lt;sub&gt; 태그는 텍스트 아래첨자(Subscript)를 정의합니다.</li>
-    <li>&lt;sub&gt; 태그는 첨자 텍스트는 문자의 절반 아래로 위치하고, 작은 글씨로 표현됩니다.</li>
+    <li>&lt;sub&gt; 태그는 문자의 절반 아래로 위치하고, 작은 글씨로 표현됩니다.</li>
+    <li>&lt;sub&gt; 태그는 수학 공식이나 화학 공식에 많이 사용됩니다.</li>
 </ul>
-
 
 
 <h4 class="pt50">비교(Compare)</h4>
@@ -84,15 +75,141 @@
     <li>글씨의 전문적인 용어를 정의할 때는 <a href="http://webzz.tistory.com/261">&lt;dfn&gt;</a> 태그를 사용합니다.</li>
     <li>글씨를 위첨자로 표현하고 싶다면 <a href="http://webzz.tistory.com/333">&lt;sup&gt;</a> 태그를 사용합니다.</li>
     <li>글씨를 아래첨자로 표현하고 싶다면 <a href="http://webzz.tistory.com/331">&lt;sub&gt;</a> 태그를 사용합니다.</li>
+    <li>글씨의 맞춤법이 틀린 단어를 표현하고 싶다면 <a href="http://webzz.tistory.com/348">&lt;u&gt;</a> 태그를 사용합니다</li>
+    <li>글씨의 저작권 및 법적 텍스트 표현은 <a href="http://webzz.tistory.com/325">&lt;small&gt;</a> 태그를 사용합니다.</li>
 </ul>
 
 
 
+<!-- Sample1 -->
+<h4 class="pt50">Sample1</h4>
+<div class="sample">
+    <h5>결과<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="ex">
+        <!-- ex -->
+        <div class="none">
+            <ul>
+                <li>글씨를 특별한 이유로 평범한 글자와 구분하기 위해서는 <i>&lt;i&gt;</i> 태그를 사용합니다.</li>
+                <li>글씨를 중요성과 관련성을 전달하지 않고, 다른 텍스트와 구별 할 때 <b>&lt;b&gt;</b> 태그를 사용합니다.</li>
+                <li>글씨를 강조하고 싶다면 <em>&lt;em&gt;</em> 태그를 사용합니다.</li>
+                <li>글씨의 중요성을 강조하고 싶다면 <strong>&lt;strong&gt;</strong> 태그를 사용합니다.</li>
+                <li>글씨의 중요성과 강조를 고려하지 않는 단순 참고용 표시를 사용한다면 <mark>&lt;mark&gt;</mark> 태그를 사용합니다.</li>
+                <li>글씨의 전문적인 용어를 정의할 때는 <dfn>&lt;dfn&gt;</dfn> 태그를 사용합니다.</li>
+                <li>글씨를 위첨자로 표현하고 싶다면 <sup>&lt;sup&gt;</sup> 태그를 사용합니다.</li>
+                <li>글씨를 아래첨자로 표현하고 싶다면 <sub>&lt;sub&gt;</sub> 태그를 사용합니다.</li>
+                <li>글씨의 맞춤법이 틀린 단어를 표현하고 싶다면 <u>&lt;u&gt;</u> 태그를 사용합니다</li>
+                <li>글씨의 저작권 및 법적인 텍스트 표현은 <small>&lt;small&gt;</small> 태그를 사용합니다.</li>
+            </ul>
+        </div>
+        <!-- ex -->
+    </div>
+</div>
+<div class="sample">
+    <h5>html<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="html">
+<pre class="line-numbers"><code class="language-markup">&lt;ul&gt;
+    &lt;li&gt;글씨를 특별한 이유로 평범한 글자와 구분하기 위해서는 &lt;i&gt;i&lt;/i&gt; 태그를 사용합니다.&lt;/li&gt;
+    &lt;li&gt;글씨를 중요성과 관련성을 전달하지 않고, 다른 텍스트와 구별 할 때 &lt;b&gt;b&lt;/b&gt; 태그를 사용합니다.&lt;/li&gt;
+    &lt;li&gt;글씨를 강조하고 싶다면 &lt;em&gt;em&lt;/em&gt; 태그를 사용합니다.&lt;/li&gt;
+    &lt;li&gt;글씨의 중요성을 강조하고 싶다면 &lt;strong&gt;strong&lt;/strong&gt; 태그를 사용합니다.&lt;/li&gt;
+    &lt;li&gt;글씨의 중요성과 강조를 고려하지 않는 단순 참고용 표시를 사용한다면 &lt;mark&gt;mark&lt;/mark&gt; 태그를 사용합니다.&lt;/li&gt;
+    &lt;li&gt;글씨의 전문적인 용어를 정의할 때는 &lt;dfn&gt;dfn&lt;/dfn&gt; 태그를 사용합니다.&lt;/li&gt;
+    &lt;li&gt;글씨를 위첨자로 표현하고 싶다면 &lt;sup&gt;sup&lt;/sup&gt; 태그를 사용합니다.&lt;/li&gt;
+    &lt;li&gt;글씨를 아래첨자로 표현하고 싶다면 &lt;sub&gt;sub&lt;/sub&gt; 태그를 사용합니다.&lt;/li&gt;
+    &lt;li&gt;글씨의 맞춤법이 틀린 단어를 표현하고 싶다면 &lt;u&gt;u&lt;/u&gt; 태그를 사용합니다&lt;/li&gt;
+    &lt;li&gt;글씨의 저작권 및 법적인 텍스트 표현은 &lt;small&gt;small&lt;/small&gt; 태그를 사용합니다.&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+    </div>
+</div>
+<!-- sample1 -->
 
 
 
 
-<h4 class="pt50">호환성(Compatibility) <a href="http://webzz.tistory.com/227" class="link"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/link.png"><span class="ir_pm">더보기</span></a></h4>
+<!-- Sample2 -->
+<h4 class="pt50">Sample2</h4>
+<p>수학 공식 및 화학 공식과 관련된 예제입니다.</p>
+<div class="sample">
+    <h5>결과<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="ex">
+        <!-- ex -->
+        <div class="none">
+            <p>플루오린화산화악티늄이 녹는 결과만 얻을 수 있다.</p>
+            <p>AcF<sub>3</sub> + 2NH<sub>3</sub> + H<sub>2</sub>O → AcOF + 2NH<sub>4</sub>F</p>
+        </div>
+        <!-- ex -->
+    </div>
+</div>
+<div class="sample">
+    <h5>html<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="html">
+<pre class="line-numbers"><code class="language-markup">&lt;p&gt;플루오린화산화악티늄이 녹는 결과만 얻을 수 있다.&lt;/p&gt;
+&lt;p&gt;AcF&lt;sub&gt;3&lt;/sub&gt; + 2NH&lt;sub&gt;3&lt;/sub&gt; + H&lt;sub&gt;2&lt;/sub&gt;O → AcOF + 2NH&lt;sub&gt;4&lt;/sub&gt;F&lt;/p&gt;
+</code></pre>
+    </div>
+</div>
+<!-- sample2 -->
+
+
+<!-- Sample3 -->
+<h4 class="pt50">Sample3</h4>
+<p>일반적으로 &lt;sub&gt; 태그는 각주 표시에도 사용됩니다.</p>
+<div class="sample">
+    <h5>결과<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="ex">
+        <!-- ex -->
+        <div class="none">
+            <p>각주 : 본문의 어떤 부분의 뜻을 보충하기위해 아래쪽<sub>1</sub>에 따로 단 것을 의미합니다.</p>
+        </div>
+        <!-- ex -->
+    </div>
+</div>
+<div class="sample">
+    <h5>html<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="html">
+<pre class="line-numbers"><code class="language-markup">&lt;p&gt;각주 : 본문의 어떤 부분의 뜻을 보충하기위해 아래쪽&lt;sub&gt;1&lt;/sub&gt;에 따로 단 것을 의미합니다.&lt;/p&gt;
+</code></pre>
+    </div>
+</div>
+<!-- sample3 -->
+
+
+
+<!-- Sample4 -->
+<h4 class="pt50">Sample4</h4>
+<p>수학 공식과 변수를 사용하는 예제입니다.</p>
+<div class="sample">
+    <h5>결과<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="ex">
+        <!-- ex -->
+        <div class="none">
+            <p><var>x<sub>1</sub></var>의 좌표와 <var>x<sub>2</sub></var>의 좌표 값을 더한 후 <var>x<sub>3</sub></var>을 추가합니다.</p>
+        </div>
+        <!-- ex -->
+    </div>
+</div>
+<div class="sample">
+    <h5>html<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="html">
+<pre class="line-numbers"><code class="language-markup">&lt;p&gt;&lt;var&gt;x&lt;sub&gt;1&lt;/sub&gt;&lt;/var&gt;의 좌표와 &lt;var&gt;x&lt;sub&gt;2&lt;/sub&gt;&lt;/var&gt;의 좌표 값을 더한 후 &lt;var&gt;x&lt;sub&gt;3&lt;/sub&gt;&lt;/var&gt;을 추가합니다.&lt;/p&gt;
+</code></pre>
+    </div>
+</div>
+<!-- sample4 -->
+
+
+
+
+
+
+
+<h4 class="pt50">호환성(Compatibility) 
+    <a href="http://webzz.tistory.com/227" class="link"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/link.png"><span class="ir_pm">더보기</span></a>
+    <span class="can">caniuse.com <a href="https://caniuse.com/#search=%3Csub%3E" target="_blank"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></span>
+</h4>
+
+
 <div class="table-responsive">
     <table class="table table-bordered table-striped table-hover compatibility">
         <thead>
@@ -137,8 +254,12 @@
 </div>
 
 
+<h4 class="pt40">참고(Reference)</h4>
+<ul>
+    <li>MDN <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sub" target="_blank"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></li>
+    <li>HTML5 <a href="https://www.w3.org/TR/html50/text-level-semantics.html#the-sub-and-sup-elements" target="_blank"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></li>
+</ul>
 
 
 
-</body>
-</html>
+
