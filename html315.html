@@ -1,17 +1,8 @@
-<!DOCTYPE html>
-<html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <title>HTML</title>
-</head>
-
-<body>
 
 
 
 <h2>&lt;q&gt;</h2>
-<p>&lt;q&gt; 태그는 짧은 인용을 정의합니다.</p>
+<p>&lt;q&gt; 태그는 짧은 글을 인용할 때 사용합니다. 인용한 글의 출처는 cite 속성을 통해 표현 할 수 있으며, 긴 문장의 인용은 &lt;blockquote&gt; 태그를 사용할 수 있습니다.</p>
 
 <hr>
 
@@ -52,15 +43,15 @@
             </tr>
             <tr>
                 <th><a href="http://webzz.tistory.com/225">닫는 태그</a></th>
-                <td>닫는 태그 사용(&lt;q&gt; ~ &lt;/q&gt;)</td>
+                <td><a href="http://webzz.tistory.com/225">닫는 태그 사용(&lt;q&gt; ~ &lt;/q&gt;)</a></td>
             </tr>
             <tr>
                 <th><a href="http://webzz.tistory.com/228">버전</a></th>
-                <td>HTML4</td>
+                <td><a href="http://webzz.tistory.com/228">HTML4</a></td>
             </tr>
             <tr>
                 <th>시각적 표현</th>
-                <td>큰 따옴표로 표현</td>
+                <td>큰 따옴표의 기울기체</td>
             </tr>
         </tbody>
     </table>
@@ -116,7 +107,58 @@
 </div>
 
 
-<h4 class="pt50">호환성(Compatibility) <a href="http://webzz.tistory.com/227" class="link"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/link.png"><span class="ir_pm">더보기</span></a></h4>
+<!-- Sample1 -->
+<h4 class="pt50">Sample1</h4>
+<p>짧은 인용을 쓸 때 사용하는 예제입니다.</p>
+<div class="sample">
+    <h5>결과<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="ex">
+        <!-- ex -->
+        <div class="none">
+            다음과 같은 정보는 웹스토리보이 사이트에 자세하게 설명이 되어 있습니다. <br><q>q 태그는 짧은 인용을 할때 쓰고, blockquote 태그는 긴 문장을 인용할 때 사용합니다.</q>
+        </div>
+        <!-- ex -->
+    </div>
+</div>
+<div class="sample">
+    <h5>html<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="html">
+<pre class="line-numbers"><code class="language-markup">다음과 같은 정보는 웹스토리보이 사이트에 자세하게 설명이 되어 있습니다. 
+&lt;q&gt;q 태그는 짧은 인용을 할때 쓰고, blockquote 태그는 긴 문장을 인용할 때 사용합니다.&lt;/q&gt;
+</code></pre>
+    </div>
+</div>
+<!-- sample1 -->
+
+
+<!-- Sample2 -->
+<h4 class="pt50">Sample2</h4>
+<p>짧은 인용과 site 속성을 사용하는 예제입니다.</p>
+<div class="sample">
+    <h5>결과<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="ex">
+        <!-- ex -->
+        <div class="none">
+            다음과 같은 정보는 웹스토리보이 사이트에 자세하게 설명이 되어 있습니다. <br><q cite="https://webzz.tistory.com/315">q 태그는 짧은 인용을 할때 쓰고, blockquote 태그는 긴 문장을 인용할 때 사용합니다.</q>
+        </div>
+        <!-- ex -->
+    </div>
+</div>
+<div class="sample">
+    <h5>html<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="html">
+<pre class="line-numbers"><code class="language-markup">다음과 같은 정보는 웹스토리보이 사이트에 자세하게 설명이 되어 있습니다. 
+&lt;q cite="https://webzz.tistory.com/315"&gt;q 태그는 짧은 인용을 할때 쓰고, blockquote 태그는 긴 문장을 인용할 때 사용합니다.&lt;/q&gt;
+</code></pre>
+    </div>
+</div>
+<!-- sample2 -->
+
+
+<h4 class="pt50">호환성(Compatibility) 
+    <a href="http://webzz.tistory.com/227" class="link"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/link.png"><span class="ir_pm">더보기</span></a>
+    <span class="can">caniuse.com <a href="https://caniuse.com/#search=%3Cq%3E" target="_blank"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></span>
+</h4>
 <div class="table-responsive">
     <table class="table table-bordered table-striped table-hover compatibility">
         <thead>
@@ -160,10 +202,13 @@
     </table>
 </div>
 
+<h4 class="pt40">참고(Reference)</h4>
+<ul>
+    <li>MDN <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q" target="_blank"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></li>
+    <li>HTML5 <a href="https://www.w3.org/TR/html50/text-level-semantics.html#the-q-element" target="_blank"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></li>
+</ul>
 
 
 
 
-</body>
 
-</html>

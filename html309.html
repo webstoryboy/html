@@ -1,21 +1,11 @@
-<!DOCTYPE html>
-<html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <title>HTML</title>
-</head>
-
-<body>
-
 
 
 <h2>&lt;output&gt;</h2>
-<p>&lt;output&gt; 태그는 계산의 결과를 보여줍니다.</p>
+<p>&lt;output&gt; 태그는 사용자에 컨트롤에 따라 결과값을 계산으로 보여주는 요소입니다.</p>
 
 <hr>
 
-<h3>&lt;output;&gt;</h3>
+<h3>&lt;output&gt;</h3>
 <p class="blue">&lt;output&gt; 태그는 계산의 결과를 보여줍니다.</p>
 
 <div class="table-responsive">
@@ -34,8 +24,7 @@
             <tr>
                 <th><a href="http://webzz.tistory.com/223">카테고리</a></th>
                 <td>
-                    <a href="http://webzz.tistory.com/223">플로우 콘텐츠(Flow Content)</a>,
-                    Listed, Labelable, Resettable form-associated element, 
+                    <a href="http://webzz.tistory.com/223">플로우 콘텐츠(Flow Content)</a>, 
                     <a href="http://webzz.tistory.com/223">프레이징 콘텐츠(Phrasing content)</a>, 
                     <a href="http://webzz.tistory.com/223">팰퍼블 콘텐츠(palpable content)</a>
                 </td>
@@ -49,7 +38,7 @@
             </tr>
             <tr>
                 <th><a href="http://webzz.tistory.com/225">요소</a></th>
-                <td>-</td>
+                <td><a href="http://webzz.tistory.com/225">인라인 요소(Inline Element)</a></td>
             </tr>
             <tr>
                 <th><a href="http://webzz.tistory.com/225">닫는 태그</a></th>
@@ -57,11 +46,11 @@
             </tr>
             <tr>
                 <th><a href="http://webzz.tistory.com/228">버전</a></th>
-                <td>HTML5</td>
+                <td><a href="http://webzz.tistory.com/228">HTML5</a></td>
             </tr>
             <tr>
                 <th>시각적 표현</th>
-                <td>output 디자인</td>
+                <td>아웃풋 컨트롤 디자인</td>
             </tr>
         </tbody>
     </table>
@@ -71,6 +60,8 @@
 <h4 class="pt50">정의(Definition)</h4>
 <ul>
     <li>&lt;output&gt; 태그는 계산의 결과를 보여줍니다.</li>
+    <li>&lt;output&gt; 태그는 스크립트와 같이 사용합니다.</li>
+    <li>&lt;output&gt; 태그는 디자인은 브라우저 별로 다양합니다.</li>
 </ul>
 
 
@@ -116,8 +107,42 @@
 </div>
 
 
+<!-- Sample1 -->
+<h4 class="pt50">Sample1</h4>
+<p>&lt;p&gt; 태그를 사용하는 예제입니다.</p>
+<div class="sample">
+    <h5>결과<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="ex">
+        <!-- ex -->
+        <div class="none">
+            <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+                <input type="range" name="b" value="70" /> +
+                <input type="number" name="a" value="20" /> =
+                <output name="result">60</output>
+            </form>
+        </div>
+        <!-- ex -->
+    </div>
+</div>
+<div class="sample">
+    <h5>html<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="html">
+<pre class="line-numbers"><code class="language-markup">&lt;form oninput="result.value=parseInt(a.value)+parseInt(b.value)"&gt;
+    &lt;input type="range" name="b" value="70" /&gt; +
+    &lt;input type="number" name="a" value="20" /&gt; =
+    &lt;output name="result">60&lt;/output&gt;
+&lt;/form&gt;
+</code></pre>
+    </div>
+</div>
+<!-- sample1 -->
 
-<h4 class="pt50">호환성(Compatibility) <a href="http://webzz.tistory.com/227" class="link"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/link.png"><span class="ir_pm">더보기</span></a></h4>
+
+
+<h4 class="pt50">호환성(Compatibility) 
+    <a href="http://webzz.tistory.com/227" class="link"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/link.png"><span class="ir_pm">더보기</span></a>
+    <span class="can">caniuse.com <a href="https://caniuse.com/#search=picture" target="_blank"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></span>
+</h4>
 <div class="table-responsive">
     <table class="table table-bordered table-striped table-hover compatibility">
         <thead>
@@ -212,10 +237,8 @@
     </table>
 </div>
 
-
-
-
-
-</body>
-
-</html>
+<h4 class="pt40">참고(Reference)</h4>
+<ul>
+    <li>MDN <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/output" target="_blank"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></li>
+    <li>HTML5 <a href="https://www.w3.org/TR/html50/grouping-content.html#the-output-element" target="_blank"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></li>
+</ul>

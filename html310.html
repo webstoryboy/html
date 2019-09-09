@@ -1,21 +1,12 @@
-<!DOCTYPE html>
-<html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <title>HTML</title>
-</head>
-
-<body>
 
 
 
 <h2>&lt;p&gt;</h2>
-<p>&lt;p&gt; 태그는 단락을 정의합니다.</p>
+<p>&lt;p&gt; 태그는 단락을 나타냅니다. 문단은 하나로 묶을 수 있는 짧막한 단위를 말하며, 단락은 하나 하나의 짧은 토막이라고 말 할 수 있습니다. 즉 단락이 모여서 문단이 됩니다. 마크업 할 때는 문단은 &lt;div&gt; 태그로 그 안에는 여러개의 &lt;p&gt; 태그로 구성되어 있다고 보시면 됩니다. &lt;p&gt; 태그와 &lt;p&gt; 태그 사이에는 한 줄의 행간이 표현됩니다.</p>
 
 <hr>
 
-<h3>&lt;p;&gt;</h3>
+<h3>&lt;p&gt;</h3>
 <p class="blue">&lt;p&gt; 태그는 단락을 정의합니다.</p>
 
 <div class="table-responsive">
@@ -51,7 +42,7 @@
             </tr>
             <tr>
                 <th><a href="http://webzz.tistory.com/225">닫는 태그</a></th>
-                <td>닫는 태그 사용(&lt;p&gt; ~ &lt;/p&gt;)</td>
+                <td><a href="http://webzz.tistory.com/225">닫는 태그 사용(&lt;p&gt; ~ &lt;/p&gt;)</a></td>
             </tr>
             <tr>
                 <th><a href="http://webzz.tistory.com/228">버전</a></th>
@@ -75,7 +66,35 @@
 </ul>
 
 
-<h4 class="pt50">호환성(Compatibility) <a href="http://webzz.tistory.com/227" class="link"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/link.png"><span class="ir_pm">더보기</span></a></h4>
+<!-- Sample1 -->
+<h4 class="pt50">Sample1</h4>
+<p>&lt;p&gt; 태그를 사용하는 예제입니다.</p>
+<div class="sample">
+    <h5>결과<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="ex">
+        <!-- ex -->
+        <div class="none">
+            <p>문단은 하나로 묶을 수 있는 짧막한 단위를 말하며, 단락은 하나 하나의 짧은 토막이라고 말 할 수 있습니다. 즉 단락이 모여서 문단이 됩니다. 마크업 할 때는 문단은 &lt;div&gt; 태그로 그 안에는 여러개의 &lt;p&gt; 태그로 구성되어 있다고 보시면 됩니다.</p>
+            <p>&lt;pre&gt; 태그는 마크업 소스를 화면 그대로 표현합니다. HTML 마크업시 두칸 이상은 브라우저에서 한칸으로 표현됩니다. 하지만 &lt;pre&gt; 태그는 마크업의 빈칸과 줄바꿈을 화면 그대로 표현합니다. 코드를 보여줄 때 많이 사용하는 편입니다.</p>
+        </div>
+        <!-- ex -->
+    </div>
+</div>
+<div class="sample">
+    <h5>html<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="html">
+<pre class="line-numbers"><code class="language-markup">&lt;p&gt;문단은 하나로 묶을 수 있는 짧막한 단위를 말하며, 단락은 하나 하나의 짧은 토막이라고 말 할 수 있습니다. 즉 단락이 모여서 문단이 됩니다. 마크업 할 때는 문단은 &lt;div&gt; 태그로 그 안에는 여러개의 &lt;p&gt; 태그로 구성되어 있다고 보시면 됩니다.&lt;/p&gt;
+&lt;p>&lt;pre&gt; 태그는 마크업 소스를 화면 그대로 표현합니다. HTML 마크업시 두칸 이상은 브라우저에서 한칸으로 표현됩니다. 하지만 &lt;pre&gt; 태그는 마크업의 빈칸과 줄바꿈을 화면 그대로 표현합니다. 코드를 보여줄 때 많이 사용하는 편입니다.&lt;/p&gt;
+</code></pre>
+    </div>
+</div>
+<!-- sample1 -->
+
+
+<h4 class="pt50">호환성(Compatibility) 
+    <a href="http://webzz.tistory.com/227" class="link"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/link.png"><span class="ir_pm">더보기</span></a>
+    <span class="can">caniuse.com <a href="https://caniuse.com/#search=picture" target="_blank"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></span>
+</h4>
 <div class="table-responsive">
     <table class="table table-bordered table-striped table-hover compatibility">
         <thead>
@@ -99,7 +118,7 @@
         </thead>
         <tbody>
             <tr>
-                <td scope="row">&lt;p&gt;</td>
+                <td class="ce" scope="row">&lt;p&gt;</td>
                 <td><span title="사용가능합니다.">사용가능</span></td><!-- 크롬 -->
                 <td><span title="사용가능합니다.">사용가능</span></td><!-- 파이어폭스 -->
                 <td><span title="사용가능합니다.">사용가능</span></td><!-- 사파리 -->
@@ -120,9 +139,8 @@
 </div>
 
 
-
-
-
-</body>
-
-</html>
+<h4 class="pt40">참고(Reference)</h4>
+<ul>
+    <li>MDN <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p" target="_blank"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></li>
+    <li>HTML5 <a href="https://www.w3.org/TR/html50/grouping-content.html#the-p-element" target="_blank"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></li>
+</ul>

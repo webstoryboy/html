@@ -1,17 +1,6 @@
-<!DOCTYPE html>
-<html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <title>HTML</title>
-</head>
-
-<body>
-
-
 
 <h2>&lt;progress&gt;</h2>
-<p>&lt;progress&gt; 태그는 작업의 진행 상태를 정의합니다.</p>
+<p>&lt;progress&gt; 태그는 작업의 진행 상태를 표시하는 바를 나타냅니다. 속성을 통해 최대 진행 표시와 현재 진행 표시를 나타낼 수 있습니다. 진행 바 표시는 브라우저마다 OS마다 틀릴 수 있습니다. 현재 진행률과 제목은 &lt;label&gt; 태그를 통해 표시합니다.</p>
 
 <hr>
 
@@ -53,15 +42,15 @@
             </tr>
             <tr>
                 <th><a href="http://webzz.tistory.com/225">닫는 태그</a></th>
-                <td>닫는 태그 사용(&lt;progress&gt; ~ &lt;/progress&gt;)</td>
+                <td><a href="http://webzz.tistory.com/225">닫는 태그 사용(&lt;progress&gt; ~ &lt;/progress&gt;)</a></td>
             </tr>
             <tr>
                 <th><a href="http://webzz.tistory.com/228">버전</a></th>
-                <td>HTML5</td>
+                <td><a href="http://webzz.tistory.com/228">HTML5</a></td>
             </tr>
             <tr>
                 <th>시각적 표현</th>
-                <td>진행 상태 디자인</td>
+                <td>진행 상태 바 디자인</td>
             </tr>
         </tbody>
     </table>
@@ -122,7 +111,35 @@
 </div>
 
 
-<h4 class="pt50">호환성(Compatibility) <a href="http://webzz.tistory.com/227" class="link"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/link.png"><span class="ir_pm">더보기</span></a></h4>
+<!-- Sample1 -->
+<h4 class="pt50">Sample1</h4>
+<p>현재 진행 상태를 나타내는 예제입니다.</p>
+<div class="sample">
+    <h5>결과<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="ex">
+        <!-- ex -->
+        <div class="none">
+            <label for="progress">현재 진행률</label>
+            <progress id="progress" max="100" value="50">50%</progress>
+        </div>
+        <!-- ex -->
+    </div>
+</div>
+<div class="sample">
+    <h5>html<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="html">
+<pre class="line-numbers"><code class="language-markup">&lt;label for="progress"&gt;현재 진행률&lt;/label&gt;
+&lt;progress id="progress" max="100" value="50"&gt;50%&lt;/progress&gt;
+</code></pre>
+    </div>
+</div>
+<!-- sample1 -->
+
+
+<h4 class="pt50">호환성(Compatibility) 
+    <a href="http://webzz.tistory.com/227" class="link"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/link.png"><span class="ir_pm">더보기</span></a>
+    <span class="can">caniuse.com <a href="https://caniuse.com/#search=%3Cprogress%3E" target="_blank"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></span>
+</h4>
 <div class="table-responsive">
     <table class="table table-bordered table-striped table-hover compatibility">
         <thead>
@@ -156,7 +173,7 @@
                 <td class="no"><span title="사용 할 수 없습니다.">사용안됨</span></td><!-- 익스플로러7 -->
                 <td class="no"><span title="사용 할 수 없습니다.">사용안됨</span></td><!-- 익스플로러8 -->
                 <td class="no"><span title="사용 할 수 없습니다.">사용안됨</span></td><!-- 익스플로러9 -->
-                <td class="no"><span title="사용 할 수 없습니다.">사용안됨</span></td><!-- 익스플로러10 -->
+                <td><span title="사용가능합니다.">사용가능</span></td><!-- 익스플로러10 -->
                 <td><span title="사용가능합니다.">사용가능</span></td><!-- 익스플로러11 -->
                 <td><span title="사용가능합니다.">사용가능</span></td><!-- 엣지 -->
                 <td><span title="사용가능합니다.">사용가능</span></td><!-- 안드로이드 -->
@@ -173,7 +190,7 @@
                 <td class="no"><span title="사용 할 수 없습니다.">사용안됨</span></td><!-- 익스플로러7 -->
                 <td class="no"><span title="사용 할 수 없습니다.">사용안됨</span></td><!-- 익스플로러8 -->
                 <td class="no"><span title="사용 할 수 없습니다.">사용안됨</span></td><!-- 익스플로러9 -->
-                <td class="no"><span title="사용 할 수 없습니다.">사용안됨</span></td><!-- 익스플로러10 -->
+                <td><span title="사용가능합니다.">사용가능</span></td><!-- 익스플로러10 -->
                 <td><span title="사용가능합니다.">사용가능</span></td><!-- 익스플로러11 -->
                 <td><span title="사용가능합니다.">사용가능</span></td><!-- 엣지 -->
                 <td><span title="사용가능합니다.">사용가능</span></td><!-- 안드로이드 -->
@@ -190,7 +207,7 @@
                 <td class="no"><span title="사용 할 수 없습니다.">사용안됨</span></td><!-- 익스플로러7 -->
                 <td class="no"><span title="사용 할 수 없습니다.">사용안됨</span></td><!-- 익스플로러8 -->
                 <td class="no"><span title="사용 할 수 없습니다.">사용안됨</span></td><!-- 익스플로러9 -->
-                <td class="no"><span title="사용 할 수 없습니다.">사용안됨</span></td><!-- 익스플로러10 -->
+                <td><span title="사용가능합니다.">사용가능</span></td><!-- 익스플로러10 -->
                 <td><span title="사용가능합니다.">사용가능</span></td><!-- 익스플로러11 -->
                 <td><span title="사용가능합니다.">사용가능</span></td><!-- 엣지 -->
                 <td><span title="사용가능합니다.">사용가능</span></td><!-- 안드로이드 -->
@@ -201,9 +218,11 @@
 </div>
 
 
+<h4 class="pt40">참고(Reference)</h4>
+<ul>
+    <li>MDN <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress" target="_blank"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></li>
+    <li>HTML5 <a href="https://www.w3.org/TR/html50/forms.html#the-progress-element" target="_blank"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></li>
+</ul>
 
 
 
-</body>
-
-</html>
